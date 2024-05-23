@@ -5,11 +5,13 @@
 
 <br>
 
-- A passionate Self-taught Front-end developer
-- Playing CTF's at spare time
-- Currently learning Web Development by Self
+- A passionate Self-taught Backend Developer
+- Specialized in Java, Spring Boot, and Python
+- Experienced in creating RESTful APIs and microservices
+- Strong understanding of software development principles and design patterns
+- Enthusiastic about learning new technologies and improving my coding skills
+- Enjoy solving complex problems and optimizing code performance
+- Advocate for clean, maintainable, and well-documented code
 <br><br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
-
-
