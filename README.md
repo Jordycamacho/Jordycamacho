@@ -1,4 +1,4 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Jordy Camacho Castilo
+Hola ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)Mi nombre es Jordy Camacho Castillo
 =============================================================================================================================================
 
 Desarrollador Back-End Java | Desarrollador Web
@@ -11,7 +11,6 @@ Estoy abierto a colaboraciones en proyectos de código abierto, especialmente aq
 Stack Principal: Java, Spring Boot, Docker, MySQL, PostgreSQL
 Conocimientos en: Patrones de Diseño, Seguridad de Aplicaciones, Pruebas Automatizadas.
 
-*   🖥️  See my portfolio at [JordyCamacho](http://github.com/Jordycamacho/repositorio)
-*   ✉️  You can contact me at [jordycamacho@gmail.com](mailto:jordycamacho@gmail.com)
-*   🚀  I'm currently working on [KunturTattoo](http://github.com/Jordycamacho/kunturtatto)
-*   🧠  I'm learning microservicios con Eureka
+*   ✉️  Puedes contactarme por [jordycamacho@gmail.com](mailto:jordycamacho@gmail.com)
+*   🚀  Actualmente estoy trabajando en [KunturTattoo](http://github.com/Jordycamacho/kunturtatto)
+*   🧠  Estoy aprendiendo microservicios con Eureka
