@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordy Camacho - Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+
+      h1, h2 {
+        text-align: center;
+        color: #333;
+        margin: 20px 0;
+      }
+
+      p {
+        text-align: justify;
+        margin: 10px 0;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 40px;
+      }
+
+      section {
+        padding: 20px;
+        margin: 10px auto;
+        max-width: 900px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #video-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      iframe {
+        border: 2px solid #333;
+        border-radius: 8px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav id="desktop-nav">
+      <div class="logo">Jordy Camacho</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jordy Camacho</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre Mí</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Título del Proyecto -->
+    <section id="ecommerce">
+      <h1>Ecommerce</h1>
+      <p>
+        <strong>Ecommerce</strong> es una plataforma de compras en línea desarrollada con el objetivo de proporcionar una experiencia de compra fluida, segura y optimizada. El proyecto se enfoca en la gestión eficiente de productos y pedidos, brindando a los usuarios la posibilidad de explorar una variedad de artículos, realizar pagos seguros y recibir actualizaciones constantes sobre sus compras.
+      </p>
+
+      <!-- Video Demostrativo -->
+      <h2>Video Demostrativo</h2>
+      <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_ENLACE_DE_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- Descripción General del Proyecto -->
+      <section id="descripcion">
+        <h2>Descripción General</h2>
+        <p>
+          El desarrollo de este Ecommerce se centró en crear una plataforma robusta y escalable que permita a los usuarios registrarse, navegar entre productos, añadir artículos al carrito y completar compras de manera segura. Además, la plataforma cuenta con roles diferenciados para usuarios y administradores, asegurando una gestión eficiente del sitio.
+        </p>
+      </section>
+
+      <!-- Características Principales -->
+      <section id="caracteristicas">
+        <h2>Características Principales</h2>
+        <ul>
+          <li><strong>Exploración de Productos:</strong> Los usuarios pueden navegar por una amplia gama de productos categorizados para una fácil búsqueda.</li>
+          <li><strong>Carrito de Compras:</strong> Los usuarios pueden agregar productos a su carrito, ver el total acumulado y proceder al pago.</li>
+          <li><strong>Gestión de Productos:</strong> Los administradores tienen la capacidad de añadir, editar y eliminar productos de la plataforma.</li>
+          <li><strong>Pagos Seguros:</strong> La plataforma utiliza la API de Stripe para procesar pagos de manera segura y eficiente.</li>
+          <li><strong>Notificaciones Automáticas:</strong> Envío de correos electrónicos a los usuarios para confirmar el estado de sus pedidos.</li>
+        </ul>
+      </section>
+
+      <!-- Funcionalidades del Usuario -->
+      <section id="usuario">
+        <h2>Funcionalidades del Usuario</h2>
+        <p>
+          Los usuarios tienen acceso a una amplia gama de funcionalidades para mejorar su experiencia de compra en línea. Entre las principales características disponibles para los clientes se incluyen:
+        </p>
+        <ul>
+          <li>Registro y autenticación de usuarios con seguridad proporcionada por Spring Security.</li>
+          <li>Exploración de productos, con la posibilidad de filtrar por categorías o precios.</li>
+          <li>Gestión de carritos de compra, con actualización en tiempo real de los productos seleccionados.</li>
+          <li>Realización de pagos seguros mediante la integración de Stripe.</li>
+          <li>Recepción de correos electrónicos para confirmar compras y envíos.</li>
+        </ul>
+      </section>
+
+      <!-- Funcionalidades del Administrador -->
+      <section id="admin">
+        <h2>Funcionalidades del Administrador</h2>
+        <p>
+          Los administradores cuentan con una interfaz dedicada para gestionar eficientemente la plataforma, manteniendo el control sobre los productos, las órdenes y los usuarios registrados.
+        </p>
+        <ul>
+          <li>Gestión completa de productos: Crear, editar y eliminar artículos.</li>
+          <li>Control de usuarios: Supervisar y administrar los roles de usuario y administrador.</li>
+          <li>Gestión de órdenes: Revisión y actualización de los pedidos realizados por los usuarios.</li>
+          <li>Envío de correos automáticos para mantener a los clientes informados sobre sus compras.</li>
+        </ul>
+      </section>
+
+      <!-- Seguridad y Testing -->
+      <section id="seguridad-testing">
+        <h2>Seguridad y Testing</h2>
+        <p>
+          Para garantizar la seguridad de la plataforma, se implementaron roles específicos para usuarios y administradores utilizando Spring Security. Además, todas las transacciones de pago son manejadas de manera segura a través de la API de Stripe, protegiendo la información financiera de los clientes.
+        </p>
+        <p>
+          El proyecto también incorpora pruebas automatizadas con <strong>Mockito</strong> y JUnit para asegurar que la plataforma funcione sin problemas. Estas pruebas verifican:
+        </p>
+        <ul>
+          <li><strong>Controladores:</strong> Validación de los endpoints del Ecommerce y respuesta de los servicios REST.</li>
+          <li><strong>Servicios:</strong> Verificación de la lógica de negocio y el manejo de productos, usuarios y órdenes.</li>
+          <li><strong>Repositorios:</strong> Pruebas de consultas JPA para la gestión eficiente de datos en MySQL.</li>
+        </ul>
+      </section>
+
+      <!-- Tecnologías Utilizadas -->
+      <section id="tecnologias">
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+          <li>Backend: Java, Spring Boot, Hibernate, Spring Security.</li>
+          <li>Frontend: HTML, CSS, Bootstrap, Thymeleaf.</li>
+          <li>Base de Datos: MySQL.</li>
+          <li>Pagos Seguros: Integración con Stripe.</li>
+          <li>Correo Electrónico: JavaMailSender para el envío de notificaciones.</li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jordy Camacho. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

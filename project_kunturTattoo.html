@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordy Camacho - KunturTattoo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+
+      h1, h2 {
+        text-align: center;
+        color: #333;
+        margin: 20px 0;
+      }
+
+      p {
+        text-align: justify;
+        margin: 10px 0;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 40px;
+      }
+
+      /* Estilos adicionales para las secciones */
+      section {
+        padding: 20px;
+        margin: 10px auto;
+        max-width: 900px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Estilos para el video */
+      #video-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      iframe {
+        border: 2px solid #333;
+        border-radius: 8px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav id="desktop-nav">
+      <div class="logo">Jordy Camacho</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jordy Camacho</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre Mí</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Título del Proyecto -->
+    <section id="kunturTattoo">
+      <h1>KunturTattoo</h1>
+      <p>
+        <strong>KunturTattoo</strong> es una innovadora aplicación web dirigida tanto a usuarios como a tatuadores. Permite a los tatuadores gestionar sus diseños y citas, mientras que los usuarios pueden explorar y filtrar diseños por categorías de una manera eficiente y organizada.
+      </p>
+
+      <!-- Video Demostrativo -->
+      <h2>Video Demostrativo</h2>
+      <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_ENLACE_DE_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- Descripción General del Proyecto -->
+      <section id="descripcion">
+        <h2>Descripción General</h2>
+        <p>
+          La plataforma fue creada con el objetivo de facilitar la gestión de tatuajes y citas para tatuadores y mejorar la experiencia de búsqueda para los usuarios. Utilizando una arquitectura moderna y robusta, se prioriza tanto la usabilidad como la seguridad en todas las áreas del proyecto.
+        </p>
+      </section>
+
+      <!-- Características Principales -->
+      <section id="caracteristicas">
+        <h2>Características Principales</h2>
+        <ul>
+          <li><strong>Exploración de Diseños:</strong> Los usuarios pueden navegar por diferentes categorías de tatuajes y aplicar filtros para encontrar el diseño perfecto.</li>
+          <li><strong>Gestión de Citas:</strong> Los administradores pueden gestionar, crear, editar y eliminar citas de manera eficiente.</li>
+          <li><strong>Notificaciones Automáticas:</strong> Sistema de envío de correos diarios para notificar al administrador sobre las citas pendientes.</li>
+          <li><strong>Formulario de Contacto:</strong> Los usuarios pueden enviar mensajes personalizados al administrador con detalles específicos para solicitar tatuajes.</li>
+        </ul>
+      </section>
+
+      <!-- Funcionalidades del Usuario -->
+      <section id="usuario">
+        <h2>Funcionalidades del Usuario</h2>
+        <p>
+          Los usuarios de la plataforma pueden realizar diversas acciones dentro de KunturTattoo, enfocadas en la exploración de diseños y contacto con tatuadores.
+        </p>
+        <ul>
+          <li>Explorar diseños de tatuajes por categorías.</li>
+          <li>Filtrar los resultados según preferencias (estilo, tamaño, etc.).</li>
+          <li>Contactar con los tatuadores mediante un formulario que incluye correo electrónico, asunto, tamaño del tatuaje, parte del cuerpo y links de referencia.</li>
+        </ul>
+      </section>
+
+      <!-- Funcionalidades del Administrador -->
+      <section id="admin">
+        <h2>Funcionalidades del Administrador</h2>
+        <p>
+          El administrador cuenta con una interfaz completa de gestión, con opciones que facilitan la creación y edición de contenidos, así como la supervisión de usuarios y citas.
+        </p>
+        <ul>
+          <li>Gestión de diseños: Crear, editar y eliminar diseños de tatuajes.</li>
+          <li>Gestión de categorías: Crear y eliminar categorías de tatuajes.</li>
+          <li>Gestión de usuarios: Revisar la lista de usuarios registrados.</li>
+          <li>Gestión de citas: Crear, editar, eliminar citas y recibir correos automáticos con recordatorios diarios sobre las citas pendientes.</li>
+        </ul>
+      </section>
+
+      <!-- Seguridad y Testing -->
+      <section id="seguridad-testing">
+        <h2>Seguridad y Testing</h2>
+        <p>
+          La aplicación garantiza un control de acceso seguro mediante la implementación de Spring Security. Los usuarios están clasificados en roles (admin, user, guest), y los permisos están detallados para cada acción (crear, actualizar, eliminar, leer).
+        </p>
+        <p>
+          Adicionalmente, el proyecto incluye un sistema de pruebas exhaustivas utilizando <strong>Mockito</strong> para asegurar que todas las funcionalidades críticas operan correctamente. Estas pruebas abarcan:
+        </p>
+        <ul>
+          <li><strong>Controladores:</strong> Validación de los endpoints y respuesta de servicios REST.</li>
+          <li><strong>Servicios:</strong> Verificación de la lógica de negocio.</li>
+          <li><strong>Repositorios:</strong> Pruebas de consultas JPA y manejo de datos con MySQL.</li>
+        </ul>
+      </section>
+
+      <!-- Tecnologías Utilizadas -->
+      <section id="tecnologias">
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+          <li>Backend: Java, Spring Boot, Spring Security, Hibernate.</li>
+          <li>Frontend: HTML, CSS, JavaScript, Thymeleaf.</li>
+          <li>Base de Datos: MySQL.</li>
+          <li>Correo Electrónico: JavaMailSender para el envío automático de correos.</li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jordy Camacho. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
