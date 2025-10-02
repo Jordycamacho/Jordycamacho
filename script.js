@@ -1,4 +1,3 @@
-// Form handling for beta testers
 document.getElementById('betaForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -6,7 +5,6 @@ document.getElementById('betaForm').addEventListener('submit', function (e) {
     const button = this.querySelector('button');
     const originalText = button.textContent;
 
-    // Simulate form submission
     button.textContent = 'Enviando...';
     button.disabled = true;
 
@@ -18,7 +16,6 @@ document.getElementById('betaForm').addEventListener('submit', function (e) {
     }, 1500);
 });
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -32,7 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add scroll effect to navbar
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -44,25 +40,22 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// FAQ functionality
+
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         const faqItem = question.parentElement;
         const isActive = faqItem.classList.contains('active');
 
-        // Close all other FAQ items
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
         });
 
-        // Toggle current item if it wasn't active
         if (!isActive) {
             faqItem.classList.add('active');
         }
     });
 });
 
-// Add animation to elements when they come into view
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -78,27 +71,24 @@ const observer = new IntersectionObserver(function (entries) {
 }, observerOptions);
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Inicializar FAQ inmediatamente
+
     document.querySelectorAll('.faq-question').forEach(question => {
         question.addEventListener('click', () => {
             const faqItem = question.parentElement;
             const isActive = faqItem.classList.contains('active');
 
-            console.log('FAQ clicked:', faqItem, 'Active:', isActive); // Para debug
+            console.log('FAQ clicked:', faqItem, 'Active:', isActive); 
 
-            // Close all other FAQ items
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
             });
 
-            // Toggle current item if it wasn't active
             if (!isActive) {
                 faqItem.classList.add('active');
             }
         });
     });
 
-    // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -112,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Form handling for beta testers
     document.getElementById('betaForm').addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -133,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Sistema de animaciones al scroll - VERSIÓN CORREGIDA
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.2,
@@ -171,12 +159,8 @@ function initScrollAnimations() {
     });
 }
 
-// Inicializar cuando la página esté completamente cargada
 window.addEventListener('load', function () {
     initScrollAnimations();
-
-    // Tu código JavaScript existente (sin cambios)
-    // Form handling for beta testers
     document.getElementById('betaForm').addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -196,7 +180,6 @@ window.addEventListener('load', function () {
         }, 1500);
     });
 
-    // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -210,7 +193,6 @@ window.addEventListener('load', function () {
         });
     });
 
-    // Add scroll effect to navbar
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 100) {
@@ -222,18 +204,15 @@ window.addEventListener('load', function () {
         }
     });
 
-    // FAQ functionality
     document.querySelectorAll('.faq-question').forEach(question => {
         question.addEventListener('click', () => {
             const faqItem = question.parentElement;
             const isActive = faqItem.classList.contains('active');
 
-            // Close all other FAQ items
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
             });
 
-            // Toggle current item if it wasn't active
             if (!isActive) {
                 faqItem.classList.add('active');
             }
@@ -244,6 +223,3 @@ window.addEventListener('load', function () {
 window.addEventListener('load', function () {
     initScrollAnimations();
 });
-
-
-// Sistema de animaciones al scroll - VERSIÓN CORREGIDA

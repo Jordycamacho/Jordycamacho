@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary: #885806;
-  --primary-dark: #d97706;
+  --primary: rgb(188, 169, 91);;
+  --primary-dark: rgb(206, 179, 71);;
   --dark: #161616;
   --darker: #000000;
   --light: #f8fafc;
@@ -59,7 +59,7 @@ body {
 
 .logo img {
   max-height: 50px;
-  width: auto; 
+  width: auto;
   object-fit: contain;
   transition: all 0.3s ease;
 }
@@ -804,89 +804,92 @@ body {
 /* ===== ANIMACIONES MEJORADAS Y SEGURAS ===== */
 /* No ocultamos elementos inicialmente, usamos transforms para animar */
 .hero-content {
-    transform: translateX(-30px);
-    opacity: 0;
-    transition: all 1s ease;
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .hero-image {
-    transform: translateX(30px);
-    opacity: 0;
-    transition: all 1s ease;
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .problem-card {
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: all 0.8s ease;
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: all 0.8s ease;
 }
 
 .solution-card {
-    transform: translateX(50px);
-    opacity: 0;
-    transition: all 0.8s ease;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.8s ease;
 }
 
 .feature-card {
-    transform: translateY(30px);
-    opacity: 0;
-    transition: all 0.6s ease;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.6s ease;
 }
 
 .faq-item {
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.5s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .beta-content {
-    transform: scale(0.9);
-    opacity: 0;
-    transition: all 0.8s ease;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.8s ease;
 }
 
 /* Clase que se agregará cuando el elemento sea visible */
 .animate-visible {
-    transform: translate(0) scale(1);
-    opacity: 1;
+  transform: translate(0) scale(1);
+  opacity: 1;
 }
 
 /* Animación de flotación solo para la imagen de la app */
 @keyframes float {
-    0%, 100% {
-        transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) translateY(0);
-    }
-    50% {
-        transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) translateY(-10px);
-    }
+
+  0%,
+  100% {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) translateY(0);
+  }
+
+  50% {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) translateY(-10px);
+  }
 }
 
 .app-screenshot {
-    animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 .app-screenshot:hover {
-    animation: none;
+  animation: none;
 }
 
 /* Efectos de hover mejorados */
 .feature-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(136, 88, 6, 0.3);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(136, 88, 6, 0.3);
 }
 
 /* Transiciones suaves para los elementos de lista */
 .problem-card li,
 .solution-card li {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .problem-card li:hover,
 .solution-card li:hover {
-    transform: translateX(5px);
-    background: rgba(136, 88, 6, 0.1);
-    border-radius: 5px;
-    padding-left: 2rem;
+  transform: translateX(5px);
+  background: rgba(136, 88, 6, 0.1);
+  border-radius: 5px;
+  padding-left: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -917,10 +920,10 @@ body {
   }
 
   .navbar {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+    height: 65px;
   }
 
-  /* Imagen de la app con mejores estilos */
   .app-screenshot {
     width: 70%;
     height: 550px;

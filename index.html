@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JNOB FIT - Tu Entrenamiento Personalizado</title>
+    <link rel="icon" type="image/png" href="/images/logo2.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation Mejorada -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -19,33 +19,28 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-<!-- Hero Section - VERSIÓN MEJORADA -->
-<section class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <!-- Tu contenido existente -->
-            <h1>Entrena a tu manera, crece con nosotros</h1>
-            <p class="hero-subtitle">La primera app donde la comunidad crea y comparte rutinas 
-                para cualquier deporte. Personaliza, adapta y entrena sin límites.</p>
-            <div class="hero-buttons">
-                <a href="https://play.google.com/store" target="_blank" class="btn">
-                    <i class="fab fa-google-play"></i>
-                    <div>
-                        <span class="small-text">Muy pronto en</span>
-                        <span class="large-text">Play Store</span>
-                    </div>
-                </a>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Entrena a tu manera, crece con nosotros</h1>
+                <p class="hero-subtitle">La primera app donde la comunidad crea y comparte rutinas
+                    para cualquier deporte. Personaliza, adapta y entrena sin límites.</p>
+                <div class="hero-buttons">
+                    <a href="https://play.google.com/store" target="_blank" class="btn">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span class="small-text">Muy pronto en</span>
+                            <span class="large-text">Play Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/home_app.png" alt="JNOB FIT App" class="app-screenshot">
             </div>
         </div>
-        <div class="hero-image">
-            <!-- La imagen mantiene todas sus clases y estilos originales -->
-            <img src="/images/home_app.png" alt="JNOB FIT App" class="app-screenshot">
-        </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Problem Solution Section -->
     <section class="problem-solution">
         <div class="container">
             <h2>¿Cansado de Rutinas Genéricas?</h2>
@@ -74,7 +69,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
             <h2>Características que Marcan la Diferencia</h2>
@@ -101,7 +95,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
             <h2>Preguntas Frecuentes</h2>
@@ -183,15 +176,15 @@
         </div>
     </section>
 
-    <!-- Beta Tester Form -->
     <section class="beta-section" id="beta">
         <div class="container">
             <div class="beta-content">
                 <h2>Sé de los Primeros en Probar JNOB FIT</h2>
                 <p>Únete a nuestra lista de beta testers y recibe acceso exclusivo a la primera versión</p>
-                <form class="beta-form" id="betaForm">
+                <form class="beta-form" id="betaForm" name="beta" method="POST" netlify data-netlify="true" action="/success.html">
+                    <input type="hidden" name="form-name" value="beta">
                     <div class="input-group">
-                        <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico"required>
                         <button type="submit" class="btn-53">
                             <div class="original">Unirme a la Beta</div>
                             <div class="letters">
@@ -210,13 +203,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <strong>JNOB FIT</strong>
+                        <img src="/images/logo.png" alt="">
                     </div>
                     <p>Transformando tu manera de entrenar</p>
                 </div>
