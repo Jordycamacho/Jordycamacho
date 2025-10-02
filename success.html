@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJVPL00EDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WJVPL00EDV');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Éxito! - JNOB FIT</title>
@@ -88,8 +97,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
         }
 
         .success-content h1 {
@@ -156,15 +172,15 @@
                 padding: 2rem;
                 margin: 0 1rem;
             }
-            
+
             .success-content h1 {
                 font-size: 2rem;
             }
         }
     </style>
 </head>
+
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -173,12 +189,12 @@
         </div>
     </nav>
 
-    <!-- Success Content -->
     <section class="success-hero">
         <div class="success-content">
             <div class="success-icon">🎉</div>
             <h1>¡Excelente!</h1>
-            <p>Te has unido exitosamente a nuestra lista de beta testers. Estarás entre los primeros en recibir acceso exclusivo a JNOB FIT.</p>
+            <p>Te has unido exitosamente a nuestra lista de beta testers. Estarás entre los primeros en recibir acceso
+                exclusivo a JNOB FIT.</p>
             <p><strong>Revisa tu correo</strong> - Te enviaremos todas las instrucciones próximamente.</p>
             <a href="/" class="btn">
                 Volver al Inicio
@@ -186,7 +202,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
@@ -195,4 +210,5 @@
         </div>
     </footer>
 </body>
+
 </html>
