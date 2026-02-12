@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNOB FIT - Logo Variations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0A0A0A;
+            color: white;
+            padding: 3rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 4rem;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .logo-card {
+            background: #1A1A1A;
+            border: 1px solid #333;
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .logo-card h3 {
+            color: rgb(188, 169, 91);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .logo-card p {
+            color: #888;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo-display {
+            background: #0A0A0A;
+            padding: 3rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .logo-display.light {
+            background: #FFFFFF;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgb(188, 169, 91);
+            color: #0A0A0A;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(188, 169, 91, 0.3);
+        }
+
+        .color-palette {
+            background: #1A1A1A;
+            border: 1px solid #333;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .color-palette h3 {
+            color: rgb(188, 169, 91);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .colors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .color-item {
+            text-align: center;
+        }
+
+        .color-box {
+            width: 100%;
+            height: 100px;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            border: 2px solid #333;
+        }
+
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .color-code {
+            font-family: monospace;
+            color: #888;
+            font-size: 0.875rem;
+        }
+
+        .usage-guide {
+            background: #1A1A1A;
+            border: 1px solid #333;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .usage-guide h3 {
+            color: rgb(188, 169, 91);
+            margin-bottom: 1rem;
+        }
+
+        .usage-guide ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .usage-guide li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .usage-guide li:last-child {
+            border-bottom: none;
+        }
+
+        .usage-guide strong {
+            color: rgb(188, 169, 91);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JNOB FIT - Sistema de Logo</h1>
+        <p class="subtitle">Logo profesional con distinción de marca y producto</p>
+
+        <!-- Color Palette -->
+        <div class="color-palette">
+            <h3>Paleta de Colores de Marca</h3>
+            <div class="colors">
+                <div class="color-item">
+                    <div class="color-box" style="background: rgb(188, 169, 91);"></div>
+                    <div class="color-name">JNOB Gold</div>
+                    <div class="color-code">rgb(188, 169, 91)</div>
+                    <div class="color-code">#BCA95B</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background: #737b86;"></div>
+                    <div class="color-name">Product Gray</div>
+                    <div class="color-code">rgb(115, 123, 134)</div>
+                    <div class="color-code">#737B86</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background: #0A0A0A;"></div>
+                    <div class="color-name">Dark Background</div>
+                    <div class="color-code">rgb(10, 10, 10)</div>
+                    <div class="color-code">#0A0A0A</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background: #FFFFFF; border-color: #ccc;"></div>
+                    <div class="color-name">Light Background</div>
+                    <div class="color-code">rgb(255, 255, 255)</div>
+                    <div class="color-code">#FFFFFF</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Variations -->
+        <div class="logo-grid">
+            <!-- Version 1: Horizontal Modern -->
+            <div class="logo-card">
+                <h3>Versión 1: Horizontal Moderna</h3>
+                <p>Logo principal - Uso general en navbar y headers</p>
+                <div class="logo-display">
+                    <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="10" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="48" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- FIT -->
+                        <text x="175" y="55" font-family="Arial, sans-serif" font-weight="700" font-size="48" fill="#737b86">FIT</text>
+                        <!-- Decorative element -->
+                        <rect x="160" y="25" width="4" height="35" fill="rgb(188, 169, 91)" rx="2"/>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo1', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+
+            <!-- Version 2: Stacked with Icon -->
+            <div class="logo-card">
+                <h3>Versión 2: Con Ícono Fitness</h3>
+                <p>Logo con elemento visual - Para app icon y branding</p>
+                <div class="logo-display">
+                    <svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fitness Icon -->
+                        <circle cx="45" cy="50" r="35" fill="none" stroke="rgb(188, 169, 91)" stroke-width="3"/>
+                        <path d="M30 50 L35 50 M55 50 L60 50" stroke="rgb(188, 169, 91)" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="37.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
+                        <circle cx="52.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
+                        <rect x="40" y="45" width="10" height="10" fill="rgb(188, 169, 91)" rx="1"/>
+                        
+                        <!-- JNOB -->
+                        <text x="95" y="58" font-family="Arial, sans-serif" font-weight="900" font-size="42" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- FIT -->
+                        <text x="230" y="58" font-family="Arial, sans-serif" font-weight="700" font-size="42" fill="#737b86">FIT</text>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo2', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+
+            <!-- Version 3: Minimal Clean -->
+            <div class="logo-card">
+                <h3>Versión 3: Minimalista Clean</h3>
+                <p>Ultra limpio - Para usos pequeños y favicon</p>
+                <div class="logo-display">
+                    <svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="5" y="50" font-family="Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="2" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- Small dot separator -->
+                        <circle cx="155" cy="40" r="4" fill="rgb(188, 169, 91)"/>
+                        <!-- FIT -->
+                        <text x="170" y="50" font-family="Arial, sans-serif" font-weight="600" font-size="44" letter-spacing="1" fill="#737b86">FIT</text>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo3', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+
+            <!-- Version 4: Stacked Vertical -->
+            <div class="logo-card">
+                <h3>Versión 4: Vertical Stacked</h3>
+                <p>Para usos verticales y espacios cuadrados</p>
+                <div class="logo-display">
+                    <svg width="200" height="140" viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="100" y="50" font-family="Arial, sans-serif" font-weight="900" font-size="52" fill="rgb(188, 169, 91)" text-anchor="middle">JNOB</text>
+                        <!-- Line separator -->
+                        <line x1="60" y1="70" x2="140" y2="70" stroke="rgb(188, 169, 91)" stroke-width="2"/>
+                        <!-- FIT -->
+                        <text x="100" y="110" font-family="Arial, sans-serif" font-weight="700" font-size="40" fill="#737b86" text-anchor="middle">FIT</text>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo4', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+
+            <!-- Version 5: Badge Style -->
+            <div class="logo-card">
+                <h3>Versión 5: Badge/Emblema</h3>
+                <p>Estilo emblema premium - Para certificaciones y sellos</p>
+                <div class="logo-display">
+                    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer circle -->
+                        <circle cx="90" cy="90" r="85" fill="none" stroke="rgb(188, 169, 91)" stroke-width="3"/>
+                        <!-- Inner circle -->
+                        <circle cx="90" cy="90" r="70" fill="none" stroke="rgb(188, 169, 91)" stroke-width="1" opacity="0.3"/>
+                        
+                        <!-- JNOB -->
+                        <text x="90" y="85" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="rgb(188, 169, 91)" text-anchor="middle">JNOB</text>
+                        <!-- FIT -->
+                        <text x="90" y="115" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#737b86" text-anchor="middle">FIT</text>
+                        
+                        <!-- Small decorative elements -->
+                        <circle cx="90" cy="25" r="3" fill="rgb(188, 169, 91)"/>
+                        <circle cx="90" cy="155" r="3" fill="rgb(188, 169, 91)"/>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo5', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+
+            <!-- Version 6: App Icon Square -->
+            <div class="logo-card">
+                <h3>Versión 6: App Icon</h3>
+                <p>Diseñado específicamente para ícono de aplicación</p>
+                <div class="logo-display">
+                    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect width="180" height="180" rx="40" fill="#0A0A0A"/>
+                        
+                        <!-- Decorative shape -->
+                        <path d="M140 40 L140 140 L40 140" stroke="rgb(188, 169, 91)" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        
+                        <!-- J initial large -->
+                        <text x="50" y="90" font-family="Arial, sans-serif" font-weight="900" font-size="72" fill="rgb(188, 169, 91)">J</text>
+                        
+                        <!-- FIT small -->
+                        <text x="100" y="130" font-family="Arial, sans-serif" font-weight="700" font-size="24" fill="#737b86">FIT</text>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo6', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+        </div>
+
+        <!-- Light Background Versions -->
+        <h2 style="text-align: center; margin: 4rem 0 2rem; color: rgb(188, 169, 91);">Versiones en Fondo Claro</h2>
+        
+        <div class="logo-grid">
+            <div class="logo-card">
+                <h3>Horizontal - Fondo Claro</h3>
+                <p>Para documentos y presentaciones</p>
+                <div class="logo-display light">
+                    <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="10" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="48" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- FIT -->
+                        <text x="175" y="55" font-family="Arial, sans-serif" font-weight="700" font-size="48" fill="#737b86">FIT</text>
+                        <!-- Decorative element -->
+                        <rect x="160" y="25" width="4" height="35" fill="rgb(188, 169, 91)" rx="2"/>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo1-light', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+
+            <div class="logo-card">
+                <h3>Con Ícono - Fondo Claro</h3>
+                <p>Versión completa para branding</p>
+                <div class="logo-display light">
+                    <svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fitness Icon -->
+                        <circle cx="45" cy="50" r="35" fill="none" stroke="rgb(188, 169, 91)" stroke-width="3"/>
+                        <path d="M30 50 L35 50 M55 50 L60 50" stroke="rgb(188, 169, 91)" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="37.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
+                        <circle cx="52.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
+                        <rect x="40" y="45" width="10" height="10" fill="rgb(188, 169, 91)" rx="1"/>
+                        
+                        <!-- JNOB -->
+                        <text x="95" y="58" font-family="Arial, sans-serif" font-weight="900" font-size="42" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- FIT -->
+                        <text x="230" y="58" font-family="Arial, sans-serif" font-weight="700" font-size="42" fill="#737b86">FIT</text>
+                    </svg>
+                </div>
+                <a href="#" class="download-btn" onclick="downloadSVG('logo2-light', event)">
+                    ⬇️ Descargar SVG
+                </a>
+            </div>
+        </div>
+
+        <!-- Usage Guide -->
+        <div class="usage-guide">
+            <h3>Guía de Uso del Logo</h3>
+            <ul>
+                <li><strong>Versión 1 (Horizontal Moderna):</strong> Usa en navbar, headers de website, emails y firma digital</li>
+                <li><strong>Versión 2 (Con Ícono):</strong> Perfect para landing pages, presentaciones y material de marketing</li>
+                <li><strong>Versión 3 (Minimalista):</strong> Ideal para favicons, watermarks y usos pequeños donde se necesita legibilidad</li>
+                <li><strong>Versión 4 (Vertical):</strong> Banners verticales, stories de Instagram, material impreso vertical</li>
+                <li><strong>Versión 5 (Badge):</strong> Certificaciones, sellos de calidad, stickers y merchandising</li>
+                <li><strong>Versión 6 (App Icon):</strong> Ícono de aplicación móvil, avatar en redes sociales, perfil de empresa</li>
+            </ul>
+            <br>
+            <p style="color: #888; font-size: 0.875rem; line-height: 1.6;">
+                <strong style="color: rgb(188, 169, 91);">Nota importante:</strong> El color dorado (JNOB) siempre debe ser rgb(188, 169, 91) para mantener consistencia de marca. 
+                Para futuros productos (JNOB Cook, JNOB Studie, etc.), mantén JNOB en dorado y cambia solo el color del nombre del producto.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function downloadSVG(logoId, event) {
+            event.preventDefault();
+            
+            // Find the SVG in the corresponding logo card
+            const card = event.target.closest('.logo-card');
+            const svg = card.querySelector('svg').cloneNode(true);
+            
+            // Convert SVG to string
+            const serializer = new XMLSerializer();
+            const svgString = serializer.serializeToString(svg);
+            
+            // Create blob and download
+            const blob = new Blob([svgString], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `jnob-fit-${logoId}.svg`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
