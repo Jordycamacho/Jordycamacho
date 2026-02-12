@@ -1,0 +1,13 @@
+<svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fitness Icon -->
+                        <circle cx="45" cy="50" r="35" fill="none" stroke="rgb(188, 169, 91)" stroke-width="3"/>
+                        <path d="M30 50 L35 50 M55 50 L60 50" stroke="rgb(188, 169, 91)" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="37.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
+                        <circle cx="52.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
+                        <rect x="40" y="45" width="10" height="10" fill="rgb(188, 169, 91)" rx="1"/>
+                        
+                        <!-- JNOB -->
+                        <text x="95" y="58" font-family="Arial, sans-serif" font-weight="900" font-size="42" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- FIT -->
+                        <text x="230" y="58" font-family="Arial, sans-serif" font-weight="700" font-size="42" fill="#737b86">FIT</text>
+                    </svg>

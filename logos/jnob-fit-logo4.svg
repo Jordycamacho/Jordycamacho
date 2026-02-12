@@ -1,0 +1,8 @@
+<svg width="200" height="140" viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="100" y="50" font-family="Arial, sans-serif" font-weight="900" font-size="52" fill="rgb(188, 169, 91)" text-anchor="middle">JNOB</text>
+                        <!-- Line separator -->
+                        <line x1="60" y1="70" x2="140" y2="70" stroke="rgb(188, 169, 91)" stroke-width="2"/>
+                        <!-- FIT -->
+                        <text x="100" y="110" font-family="Arial, sans-serif" font-weight="700" font-size="40" fill="#737b86" text-anchor="middle">FIT</text>
+                    </svg>

@@ -1,0 +1,15 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer circle -->
+                        <circle cx="90" cy="90" r="85" fill="none" stroke="rgb(188, 169, 91)" stroke-width="3"/>
+                        <!-- Inner circle -->
+                        <circle cx="90" cy="90" r="70" fill="none" stroke="rgb(188, 169, 91)" stroke-width="1" opacity="0.3"/>
+                        
+                        <!-- JNOB -->
+                        <text x="90" y="85" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="rgb(188, 169, 91)" text-anchor="middle">JNOB</text>
+                        <!-- FIT -->
+                        <text x="90" y="115" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#737b86" text-anchor="middle">FIT</text>
+                        
+                        <!-- Small decorative elements -->
+                        <circle cx="90" cy="25" r="3" fill="rgb(188, 169, 91)"/>
+                        <circle cx="90" cy="155" r="3" fill="rgb(188, 169, 91)"/>
+                    </svg>

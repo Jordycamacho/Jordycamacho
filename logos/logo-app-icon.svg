@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with rounded corners -->
+    <rect width="512" height="512" rx="115" fill="#0A0A0A"/>
+    
+    <!-- Decorative golden line -->
+    <path d="M398 115 L398 398 L115 398" stroke="rgb(188, 169, 91)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    
+    <!-- Large J initial -->
+    <text x="142" y="280" font-family="Arial, sans-serif" font-weight="900" font-size="205" fill="rgb(188, 169, 91)">J</text>
+    
+    <!-- FIT text smaller -->
+    <text x="285" y="370" font-family="Arial, sans-serif" font-weight="700" font-size="68" fill="#737b86">FIT</text>
+    
+    <!-- Small accent dots -->
+    <circle cx="390" cy="122" r="8" fill="rgb(188, 169, 91)"/>
+    <circle cx="122" cy="390" r="8" fill="rgb(188, 169, 91)"/>
+</svg>

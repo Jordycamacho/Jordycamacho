@@ -1,0 +1,8 @@
+<svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="5" y="50" font-family="Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="2" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- Small dot separator -->
+                        <circle cx="155" cy="40" r="4" fill="rgb(188, 169, 91)"/>
+                        <!-- FIT -->
+                        <text x="170" y="50" font-family="Arial, sans-serif" font-weight="600" font-size="44" letter-spacing="1" fill="#737b86">FIT</text>
+                    </svg>

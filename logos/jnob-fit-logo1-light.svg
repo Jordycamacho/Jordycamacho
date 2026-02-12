@@ -1,0 +1,8 @@
+<svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- JNOB -->
+                        <text x="10" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="48" fill="rgb(188, 169, 91)">JNOB</text>
+                        <!-- FIT -->
+                        <text x="175" y="55" font-family="Arial, sans-serif" font-weight="700" font-size="48" fill="#737b86">FIT</text>
+                        <!-- Decorative element -->
+                        <rect x="160" y="25" width="4" height="35" fill="rgb(188, 169, 91)" rx="2"/>
+                    </svg>
