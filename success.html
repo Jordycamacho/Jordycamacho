@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Éxito! - JNOB FIT</title>
+    <title>¡Bienvenido a JNOB FIT! - Registro Exitoso</title>
+    <link rel="icon" type="image/png" href="/logos/logo-circle.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,194 +18,521 @@
         }
 
         :root {
-            --primary: #885806;
-            --primary-dark: #d97706;
-            --dark: #161616;
-            --darker: #000000;
-            --light: #f8fafc;
-            --gray: #927272;
-            --gray-dark: #737b86;
+            --gold: rgb(185, 159, 55);
+            --gold-light: rgb(185, 159, 55);
+            --gold-dark: #866d19;
+            --black: #0A0A0A;
+            --black-soft: #1A1A1A;
+            --white: #FFFFFF;
+            --gray-200: #CCCCCC;
+            --gray-400: #888888;
+            --font-display: 'Syne', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--light);
-            background: var(--darker);
+            font-family: var(--font-body);
+            background: var(--black);
+            color: var(--white);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden;
         }
 
+        /* Animated Background */
+        #backgroundCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Navigation */
         .navbar {
             position: fixed;
             top: 0;
-            width: 100%;
-            height: 80px;
-            background: rgba(0, 0, 0, 0.95);
+            left: 0;
+            right: 0;
             z-index: 1000;
-            padding: 1.2rem 0;
-            border-bottom: 1px solid var(--primary);
-            box-shadow: 0 4px 20px rgba(255, 230, 0, 0.2);
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2rem;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--primary);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        .logo img {
+            height: 40px;
+            width: auto;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
         }
 
-        .success-hero {
+        /* Success Section */
+        .success-section {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 120px 20px 60px;
-            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') no-repeat center center;
-            background-size: cover;
+            padding: 120px 2rem 4rem;
+            position: relative;
+            z-index: 1;
         }
 
         .success-content {
+            max-width: 700px;
             text-align: center;
-            max-width: 600px;
-            padding: 3rem;
-            background: rgba(22, 22, 22, 0.9);
-            border-radius: 20px;
-            border: 1px solid var(--primary);
-            box-shadow: 0 20px 40px rgba(136, 88, 6, 0.3);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .success-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 4rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            animation: pulse 2s infinite;
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.4);
+            animation: scaleIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
 
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
             }
 
-            50% {
-                transform: scale(1.1);
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .success-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 2rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 2rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: fadeIn 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
             }
         }
 
         .success-content h1 {
-            font-size: 2.5rem;
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--primary) 0%, #fbbf24 100%);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            animation: fadeIn 0.8s ease-out 0.3s backwards;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .success-content p {
-            font-size: 1.2rem;
-            color: var(--light);
-            margin-bottom: 2.5rem;
-            line-height: 1.6;
+            font-size: 1.25rem;
+            color: var(--gray-200);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            animation: fadeIn 0.8s ease-out 0.4s backwards;
         }
 
-        .btn {
-            padding: 1rem 2rem;
+        .success-content p strong {
+            color: var(--white);
             font-weight: 700;
-            background: var(--primary);
-            color: var(--darker);
-            cursor: pointer;
-            border-radius: 0.5rem;
-            border-bottom: 2px solid var(--primary-dark);
-            border-right: 2px solid var(--primary-dark);
-            border-top: 2px solid var(--primary);
-            border-left: 2px solid var(--primary);
-            transition-duration: 0.5s;
-            transition-property: border-top, border-left, border-bottom, border-right, box-shadow;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.8rem;
-            font-size: 1.1rem;
         }
 
-        .btn:hover {
-            border-top: 2px solid var(--primary-dark);
-            border-left: 2px solid var(--primary-dark);
-            border-bottom: 2px solid var(--primary);
-            border-right: 2px solid var(--primary);
-            box-shadow: 0 5px 15px rgba(136, 88, 6, 0.4);
-            transform: translateY(-2px);
+        .success-steps {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: left;
+            animation: fadeIn 0.8s ease-out 0.5s backwards;
         }
 
-        .footer {
-            background: var(--darker);
-            padding: 40px 0 20px;
-            border-top: 1px solid var(--gray-dark);
+        .success-steps h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
 
-        .footer-bottom {
-            padding-top: 2rem;
-            border-top: 1px solid var(--gray-dark);
-            color: var(--gray);
+        .step {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: start;
         }
 
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-family: var(--font-display);
+        }
+
+        .step-content h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+
+        .step-content p {
+            font-size: 1rem;
+            color: var(--gray-400);
+            margin: 0;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+            animation: fadeIn 0.8s ease-out 0.6s backwards;
+        }
+
+        .benefit {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .benefit:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .benefit p {
+            font-size: 0.875rem;
+            color: var(--gray-400);
+            margin: 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeIn 0.8s ease-out 0.7s backwards;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--black);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--gold);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black-soft);
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--gray-400);
+            font-size: 0.875rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
             .success-content {
-                padding: 2rem;
-                margin: 0 1rem;
+                padding: 0 1rem;
             }
 
             .success-content h1 {
                 font-size: 2rem;
+            }
+
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
             }
         }
     </style>
 </head>
 
 <body>
+    <canvas id="backgroundCanvas"></canvas>
+
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <strong>JNOB FIT</strong>
+                <img src="/logos/logo-with-icon.svg" alt="JNOB FIT">
             </div>
         </div>
     </nav>
 
-    <section class="success-hero">
+    <section class="success-section">
         <div class="success-content">
-            <div class="success-icon">🎉</div>
-            <h1>¡Excelente!</h1>
-            <p>Te has unido exitosamente a nuestra lista de beta testers. Estarás entre los primeros en recibir acceso
-                exclusivo a JNOB FIT.</p>
-            <p><strong>Revisa tu correo</strong> - Te enviaremos todas las instrucciones próximamente.</p>
-            <a href="/" class="btn">
-                Volver al Inicio
-            </a>
+            <div class="success-badge">
+                <i class="fas fa-check-circle"></i>
+                <span>Registro Confirmado</span>
+            </div>
+
+            <h1>
+                ¡Bienvenido a <span class="gradient-text">JNOB FIT</span>!
+            </h1>
+
+            <p>
+                <strong>Has dado el primer paso</strong> hacia una nueva forma de entrenar.
+                Eres oficialmente parte de nuestra comunidad de beta testers.
+            </p>
+
+            <div class="success-steps">
+                <h3>¿Qué Sigue?</h3>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Revisa tu Email</h4>
+                        <p>Te enviamos un correo de confirmación con todos los detalles. Revisa también tu carpeta de
+                            spam.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Espera Nuestro Contacto</h4>
+                        <p>En las próximas 48 horas te enviaremos las instrucciones de acceso a la versión beta.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Empieza a Entrenar</h4>
+                        <p>Descarga la app, crea tu primera rutina y experimenta el control total sobre tu
+                            entrenamiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <h4>Acceso Anticipado</h4>
+                    <p>Sé de los primeros en usar JNOB FIT</p>
+                </div>
+                <div class="benefit">
+                    <h4>Features Premium</h4>
+                    <p>Gratis durante el período beta</p>
+                </div>
+                <div class="benefit">
+                    <h4>Beneficios Exclusivos</h4>
+                    <p>Recompensas por ser early adopter</p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="/" class="btn btn-primary">
+                    <i class="fas fa-home"></i>
+                    <span>Volver al Inicio</span>
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    <i class="fab fa-instagram"></i>
+                    <span>Síguenos en Instagram</span>
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2024 JNOB FIT. Todos los derechos reservados.</p>
-            </div>
-        </div>
+        <p>&copy; 2024 JNOB FIT. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        class GoldenCloudBackground {
+            constructor() {
+                this.canvas = document.getElementById('backgroundCanvas');
+                if (!this.canvas) return;
+                this.ctx = this.canvas.getContext('2d');
+                this.particles = [];
+                this.init();
+            }
+
+            init() {
+                this.resize();
+                this.createParticles();
+                this.animate();
+            }
+
+            resize() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            }
+
+            createParticles() {
+                const particleCount = Math.min(40, Math.floor(window.innerWidth / 25));
+                for (let i = 0; i < particleCount; i++) {
+                    this.particles.push({
+                        x: Math.random() * this.canvas.width,
+                        y: Math.random() * this.canvas.height,
+                        size: Math.random() * 80 + 40,
+                        speedX: (Math.random() - 0.7) * 0.5,
+                        speedY: (Math.random() - 0.5) * 0.3,
+                        opacity: Math.random() * 0.15 + 0.05
+                    });
+                }
+            }
+
+            animate() {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                const gradient = this.ctx.createRadialGradient(
+                    this.canvas.width * 0.7, this.canvas.height * 0.3, 0,
+                    this.canvas.width * 0.7, this.canvas.height * 0.3, this.canvas.width * 0.8
+                );
+                gradient.addColorStop(0, 'rgba(212, 175, 55, 0.05)');
+                gradient.addColorStop(1, 'transparent');
+                this.ctx.fillStyle = gradient;
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+                this.particles.forEach(particle => {
+                    particle.x += particle.speedX;
+                    particle.y += particle.speedY;
+
+                    if (particle.x < -particle.size) particle.x = this.canvas.width + particle.size;
+                    if (particle.x > this.canvas.width + particle.size) particle.x = -particle.size;
+                    if (particle.y < -particle.size) particle.y = this.canvas.height + particle.size;
+                    if (particle.y > this.canvas.height + particle.size) particle.y = -particle.size;
+
+                    const grad = this.ctx.createRadialGradient(
+                        particle.x, particle.y, 0,
+                        particle.x, particle.y, particle.size
+                    );
+                    grad.addColorStop(0, `rgba(212, 175, 55, ${particle.opacity})`);
+                    grad.addColorStop(1, 'rgba(212, 175, 55, 0)');
+
+                    this.ctx.fillStyle = grad;
+                    this.ctx.beginPath();
+                    this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    this.ctx.fill();
+                });
+
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new GoldenCloudBackground();
+
+            window.addEventListener('resize', () => {
+                location.reload();
+            });
+        });
+    </script>
 </body>
 
 </html>

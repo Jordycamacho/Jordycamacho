@@ -7,246 +7,496 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-WJVPL00EDV');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JNOB FIT - Tu Entrenamiento Personalizado</title>
-    <link rel="icon" type="image/png" href="/images/logo2.png">
+    <meta name="description"
+        content="JNOB FIT - La app definitiva para entrenar sin límites. Crea rutinas personalizadas para cualquier deporte. Únete a la revolución del fitness.">
+    <title>JNOB FIT </title>
+    <link rel="icon" type="image/png" href="/logos/logo-circle.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
-
 <body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="/images/logo.png" alt="">
+                <img src="/logos/logo-with-icon.svg" alt="JNOB FIT">
             </div>
+            <a href="#beta" class="nav-cta">
+                <span>Acceso Beta</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-glow"></div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Entrena a tu manera, crece con nosotros</h1>
-                <p class="hero-subtitle">La primera app donde la comunidad crea y comparte rutinas
-                    para cualquier deporte. Personaliza, adapta y entrena sin límites.</p>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Beta Muy Pronto</span>
+                </div>
+                <h1 class="hero-title">
+                    Tu Entrenamiento,
+                    <span class="gradient-text">Tus Reglas</span>
+                </h1>
+                <p class="hero-subtitle">
+                    La primera app donde <strong>tú</strong> defines cada parámetro, cada métrica, cada objetivo.
+                    Desde powerlifting hasta yoga. Sin plantillas genéricas. Solo tu visión.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Personalizable</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Deportes</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Límites</div>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="https://play.google.com/store" target="_blank" class="btn">
-                        <i class="fab fa-google-play"></i>
-                        <div>
-                            <span class="small-text">Muy pronto en</span>
-                            <span class="large-text">Play Store</span>
-                        </div>
+                    <a href="#beta" class="btn-primary">
+                        <span>Únete a la Beta</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                    <a href="#features" class="btn-secondary">
+                        <span>Descubrir Más</span>
+                        <i class="fas fa-arrow-down"></i>
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="/images/home_app.png" alt="JNOB FIT App" class="app-screenshot">
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="/images/home_app.png" alt="JNOB FIT App Interface" class="app-screenshot">
+                    </div>
+                    <div class="phone-glow"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <div class="card-icon"></div>
+                    <div class="card-text">Sets personalizados</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon"></div>
+                    <div class="card-text">Progreso detallado</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon"></div>
+                    <div class="card-text">Metas adaptables</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">El Problema</span>
+                <h2>Las Apps de Fitness Te Limitan</h2>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-side other-apps">
+                    <div class="side-header">
+                        <h3>Otras Apps</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li>
+                            <i class="fas fa-times"></i>
+                            <div>
+                                <strong>Plantillas rígidas</strong>
+                                <span>No puedes modificar ejercicios según tus necesidades</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i>
+                            <div>
+                                <strong>Métricas limitadas</strong>
+                                <span>Solo peso y repeticiones, nada más</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i>
+                            <div>
+                                <strong>Un solo deporte</strong>
+                                <span>Necesitas una app diferente para cada actividad</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-times"></i>
+                            <div>
+                                <strong>Comunidad pasiva</strong>
+                                <span>Rutinas creadas por "expertos", no por atletas reales</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="comparison-divider">
+                    <span>VS</span>
+                </div>
+
+                <div class="comparison-side jnob-fit">
+                    <div class="side-header">
+                        <h3>JNOB FIT</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <strong>Libertad total</strong>
+                                <span>Crea desde cero o modifica cada aspecto de tu rutina</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <strong>Parámetros infinitos</strong>
+                                <span>Tiempo, distancia, ritmo cardíaco, intensidad - lo que necesites</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <strong>Multi-deporte real</strong>
+                                <span>Gym, running, natación, boxeo, yoga - todo en una app</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <strong>Comunidad activa</strong>
+                                <span>Comparte y descubre rutinas creadas por atletas como tú</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Características</span>
+                <h2>Todo Lo Que Necesitas, Nada Que Te Sobre</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card large">
+                    <div class="feature-visual">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Personalización Sin Límites</h3>
+                        <p>Define cada ejercicio con múltiples parámetros: series, repeticiones, peso, tiempo,
+                            distancia, descansos. Crea nuevos ejercicios. Inventa tu propio deporte si quieres.</p>
+                        <ul class="feature-list">
+                            <li>Sets personalizables con contadores de descanso</li>
+                            <li>Parámetros adaptables a cualquier métrica</li>
+                            <li>Posiciones ordenables para tu flujo perfecto</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-visual small">
+                    </div>
+                    <h3>Multi-Deporte Real</h3>
+                    <p>No más apps separadas. Gestiona todo tu entrenamiento en un solo lugar.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-visual small">
+                    </div>
+                    <h3>Progreso Claro</h3>
+                    <p>Visualiza tu evolución con métricas que realmente importan para tus objetivos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-visual small">
+                    </div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Comparte tus rutinas, descubre entrenamientos únicos, conecta con atletas.</p>
+                </div>
+
+                <div class="feature-card accent">
+                    <div class="feature-content centered">
+                        <h3>¿Tienes Una Idea Única?</h3>
+                        <p>JNOB FIT se adapta a tu creatividad. Crea sistemas de entrenamiento que ni siquiera existen
+                            todavía. Si tiene sentido para ti, funciona en JNOB FIT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Para Todos</span>
+                <h2>Tu Deporte, Tu App</h2>
+            </div>
+            <div class="use-cases-slider">
+                <div class="use-case">
+                    <div class="use-case-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000')">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Gym & Powerlifting</h3>
+                        <p>Registra series, peso, repeticiones, RPE, tempo. Programa tu periodización exacta.</p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1000')">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Running & Cardio</h3>
+                        <p>Distancia, pace, intervalos, ritmo cardíaco. Todo lo que necesitas para mejorar tu marca.</p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000')">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>CrossFit & HIIT</h3>
+                        <p>WODs complejos, AMRAPs, EMOMs. Crea entrenamientos que cambian cada día.</p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000')">
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Yoga & Movilidad</h3>
+                        <p>Duración de posturas, respiración, secuencias. Tu práctica, tu ritmo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Section -->
     <section class="beta-section" id="beta">
         <div class="container">
             <div class="beta-content">
-                <h2>Sé de los Primeros en Probar JNOB FIT</h2>
-                <p>Únete a nuestra lista de beta testers y recibe acceso exclusivo a la primera versión</p>
+                <div class="beta-badge">
+                    <span>Versión Beta</span>
+                </div>
+                <h2>Sé de Los Primeros</h2>
+                <p class="beta-subtitle">Únete a nuestra comunidad de beta testers y ayúdanos a crear la mejor app de
+                    fitness. Acceso exclusivo garantizado.</p>
+
                 <form class="beta-form" name="beta" method="POST" netlify data-netlify="true" action="/success.html">
                     <input type="hidden" name="form-name" value="beta">
-                    <div class="input-group">
-                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico"
-                            required>
-                        <button type="submit" class="btn-53">
-                            <div class="original">Unirme a la Beta</div>
-                            <div class="letters">
-                                <span>U</span>
-                                <span>N</span>
-                                <span>I</span>
-                                <span>R</span>
-                                <span>M</span>
-                                <span>E</span>
-                            </div>
+                    <div class="form-wrapper">
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+                            <div class="input-border"></div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Acceder a Beta</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <div class="btn-shine"></div>
                         </button>
                     </div>
-                    <p class="form-note">Te contactaremos para el acceso a la versión beta</p>
+                    <p class="form-note">
+                        <i class="fas fa-lock"></i>
+                        Te contactaremos en las próximas 48 horas con instrucciones
+                    </p>
                 </form>
-            </div>
-        </div>
-    </section>
 
-    <section class="problem-solution">
-        <div class="container">
-            <h2>¿Cansado de Rutinas Genéricas?</h2>
-            <div class="ps-grid">
-                <div class="problem-card">
-                    <h3>El Problema</h3>
-                    <ul>
-                        <li>❌ Rutinas que no se adaptan a tus objetivos</li>
-                        <li>❌ Apps genéricas sin personalización real</li>
-                        <li>❌ No puedes modificar ejercicios a tu gusto</li>
-                        <li>❌ Métricas limitadas que no reflejan tu progreso</li>
-                        <li>❌ Comunidades inactivas sin engagement real</li>
-                    </ul>
-                </div>
-                <div class="solution-card">
-                    <h3>Nuestra Solución</h3>
-                    <ul>
-                        <li>✅ Rutinas 100% personalizadas desde cero</li>
-                        <li>✅ Adaptable a cualquier deporte o disciplina</li>
-                        <li>✅ Modifica y crea ejercicios libremente</li>
-                        <li>✅ Métricas completas y personalizables</li>
-                        <li>✅ Comunidad activa y colaborativa</li>
-                    </ul>
+                <div class="beta-features">
+                    <div class="beta-feature">
+                        <i class="fas fa-star"></i>
+                        <span>Acceso anticipado</span>
+                    </div>
+                    <div class="beta-feature">
+                        <i class="fas fa-gift"></i>
+                        <span>Beneficios exclusivos</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features" id="features">
-        <div class="container">
-            <h2>Características que Marcan la Diferencia</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                        alt="Personalización">
-                    <h3>Personalización Total</h3>
-                    <p>Crea rutinas desde cero sin limitaciones de plantillas prediseñadas</p>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                        alt="Múltiples Deportes">
-                    <h3>Multi-Deporte Real</h3>
-                    <p>Gym, cardio, crossfit, yoga, natación, boxeo y muchas disciplinas más</p>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                        alt="Seguimiento">
-                    <h3>Métricas flexibles</h3>
-                    <p>registra lo que importa para ti, no lo que te imponen.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
-            <h2>Preguntas Frecuentes</h2>
+            <div class="section-header centered">
+                <span class="section-label">FAQ</span>
+                <h2>Preguntas Frecuentes</h2>
+            </div>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Qué es JNOB FIT?</h3>
-                        <div class="plusButton">
-                            <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                                <g mask="url(#mask0_21_345)">
-                                    <path
-                                        d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z">
-                                    </path>
-                                </g>
-                            </svg>
+                    <button class="faq-question">
+                        <span>¿Qué hace diferente a JNOB FIT?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
                         </div>
-                    </div>
+                    </button>
                     <div class="faq-answer">
-                        <p>JNOB FIT es una aplicación móvil que te permite crear rutinas de entrenamiento 100%
-                            personalizadas desde cero, adaptadas específicamente a tus objetivos, nivel de experiencia y
-                            preferencias personales.</p>
+                        <p>JNOB FIT te da control absoluto. Mientras otras apps te obligan a seguir plantillas
+                            predefinidas, nosotros te dejamos crear ejercicios desde cero, definir tus propios
+                            parámetros y métricas, y adaptarlo a cualquier deporte o disciplina. Es como tener un
+                            entrenador que entiende exactamente lo que necesitas.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Cuándo estará disponible la aplicación?</h3>
-                        <div class="plusButton">
-                            <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                                <g mask="url(#mask0_21_345)">
-                                    <path
-                                        d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z">
-                                    </path>
-                                </g>
-                            </svg>
+                    <button class="faq-question">
+                        <span>¿Puedo usarlo para cualquier deporte?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
                         </div>
-                    </div>
+                    </button>
                     <div class="faq-answer">
-                        <p>Actualmente estamos desarrollando la versión beta. Únete a nuestra lista de espera para ser
-                            de los primeros en probarla y recibir acceso anticipado.</p>
+                        <p>Absolutamente. JNOB FIT funciona para gym, running, natación, ciclismo, yoga, boxeo,
+                            CrossFit, calistenia, artes marciales y cualquier actividad física que imagines. Si puedes
+                            medirlo, puedes programarlo en JNOB FIT.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿La aplicación será gratuita?</h3>
-                        <div class="plusButton">
-                            <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                                <g mask="url(#mask0_21_345)">
-                                    <path
-                                        d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z">
-                                    </path>
-                                </g>
-                            </svg>
+                    <button class="faq-question">
+                        <span>¿Cuándo estará disponible la app?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
                         </div>
-                    </div>
+                    </button>
                     <div class="faq-answer">
-                        <p>Sí, la versión básica será completamente gratuita e incluirá todas las funciones esenciales
-                            para crear y seguir tus rutinas personalizadas.</p>
+                        <p>La versión beta ya está disponible para quienes se registren en nuestra lista. Lanzaremos la
+                            versión completa en Play Store próximamente. Únete ahora para ser de los primeros en
+                            acceder.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Para qué deportes o disciplinas sirve?</h3>
-                        <div class="plusButton">
-                            <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                                <g mask="url(#mask0_21_345)">
-                                    <path
-                                        d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z">
-                                    </path>
-                                </g>
-                            </svg>
+                    <button class="faq-question">
+                        <span>¿Tiene costo?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
                         </div>
-                    </div>
+                    </button>
                     <div class="faq-answer">
-                        <p>Es completamente multi-deporte: gym, cardio, crossfit, yoga, calistenia, running, natación,
-                            boxeo y muchas disciplinas más. Adaptable a cualquier actividad física.</p>
+                        <p>La versión básica de JNOB FIT es completamente gratuita e incluye todas las funciones
+                            esenciales: crear rutinas ilimitadas, registrar entrenamientos y ver tu progreso. Los beta
+                            testers tendrán acceso a funciones premium de forma gratuita durante el período de prueba.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo funciona la comunidad?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La comunidad JNOB FIT te permite compartir tus rutinas con otros atletas y descubrir
+                            entrenamientos creados por personas reales. Puedes seguir a usuarios inspiradores, guardar
+                            rutinas para probarlas más tarde y conectar con personas que entrenan como tú.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Necesito experiencia previa?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para nada. JNOB FIT es intuitivo y fácil de usar. Si eres principiante, puedes empezar con
+                            rutinas simples de la comunidad. Si eres avanzado, tendrás todas las herramientas para crear
+                            programas complejos. La app crece contigo.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Deja de Adaptarte a las Apps.<br><span class="gradient-text">Que Se Adapten a Ti.</span></h2>
+                <p>Únete a la revolución del entrenamiento personalizado. Beta disponible ahora.</p>
+                <a href="#beta" class="btn-primary large">
+                    <span>Acceder a la Beta</span>
+                    <div class="btn-shine"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-brand">
                     <div class="logo">
-                        <img src="/images/logo.png" alt="">
+                        <img src="/logos/logo-circle.svg" alt="JNOB FIT">
                     </div>
-                    <p>Transformando tu manera de entrenar</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#features">Características</a></li>
-                        <li><a href="#faq">Preguntas Frecuentes</a></li>
-                        <li><a href="#beta">Acceso Beta</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
+                    <p>Transformando la manera en que el mundo entrena.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="#features">Características</a></li>
+                            <li><a href="#beta">Acceso Beta</a></li>
+                            <li><a href="#faq">Preguntas</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacidad.html">Privacidad</a></li>
+                            <li><a href="terminos.html">Términos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Descargar</h4>
+                        <ul>
+                            <li><a href="https://play.google.com/store" target="_blank">Android (Próximamente)</a></li>
+                            <li><a href="#">iOS (Próximamente)</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

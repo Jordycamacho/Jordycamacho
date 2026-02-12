@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJVPL00EDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WJVPL00EDV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Términos y Condiciones de uso de JNOB FIT. Reglas del programa beta y uso de la plataforma.">
+    <title>Términos y Condiciones · JNOB FIT</title>
+    <link rel="icon" type="image/png" href="/logos/logo-circle.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Mismos estilos que privacidad.html */
+        .legal-page {
+            padding: calc(120px + var(--space-2xl)) 0 var(--space-3xl);
+            position: relative;
+            z-index: 1;
+        }
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: var(--space-lg);
+        }
+        .legal-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gold), #f5e7a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-sm);
+        }
+        .legal-header .last-updated {
+            color: var(--gray-400);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+        }
+        .legal-header .last-updated i {
+            color: var(--gold);
+        }
+        .legal-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+        }
+        .legal-section {
+            background: rgba(255,255,255,0.02);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            border-left: 4px solid var(--gold);
+            transition: all 0.2s ease;
+        }
+        .legal-section:hover {
+            background: rgba(212, 175, 55, 0.05);
+            border-left-color: var(--gold-light);
+        }
+        .legal-section h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        .legal-section h2 i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        .legal-section h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin: var(--space-md) 0 var(--space-sm);
+        }
+        .legal-section p, .legal-section li {
+            color: var(--gray-200);
+            line-height: 1.7;
+            margin-bottom: var(--space-sm);
+        }
+        .legal-section ul, .legal-section ol {
+            padding-left: var(--space-lg);
+            margin-bottom: var(--space-md);
+        }
+        .legal-section li {
+            margin-bottom: var(--space-xs);
+        }
+        .legal-section strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+        .legal-highlight {
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            margin-top: var(--space-md);
+        }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            margin-top: var(--space-xl);
+            color: var(--gray-400);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .back-home:hover {
+            color: var(--gold);
+        }
+        @media (max-width: 768px) {
+            .legal-container {
+                padding: var(--space-lg);
+            }
+            .legal-section {
+                padding: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="/logos/logo-with-icon.svg" alt="JNOB FIT"></a>
+            </div>
+            <a href="/#beta" class="nav-cta">
+                <span>Acceso Beta</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="legal-page">
+        <div class="container">
+            <div class="legal-container">
+                <div class="legal-header">
+                    <h1>Términos y Condiciones</h1>
+                    <div class="last-updated">
+                        <i class="fas fa-calendar-alt"></i>
+                        Última actualización: 12 de febrero de 2026
+                    </div>
+                </div>
+
+                <div class="legal-content">
+                    <div class="legal-section">
+                        <h2><i class="fas fa-info-circle"></i> 1. Aceptación de los Términos</h2>
+                        <p>Al acceder o utilizar la web de <strong>JNOB FIT</strong> y registrarte en el programa beta, aceptas quedar vinculado por estos Términos y Condiciones, así como por nuestra Política de Privacidad. Si no estás de acuerdo, no utilices nuestros servicios.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-flask"></i> 2. Programa Beta</h2>
+                        <p>El acceso a la versión beta de la aplicación es <strong>gratuito, limitado y con carácter de prueba</strong>.</p>
+                        <ul>
+                            <li>El objetivo es obtener feedback para mejorar la app.</li>
+                            <li>No garantizamos disponibilidad continua ni ausencia de errores.</li>
+                            <li>JNOB FIT puede modificar, suspender o cancelar el programa beta en cualquier momento sin previo aviso.</li>
+                            <li>Los datos generados durante la beta podrían no ser conservados en la versión final.</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-user-circle"></i> 3. Registro y Seguridad</h2>
+                        <p>Al registrarte declaras:</p>
+                        <ul>
+                            <li>Ser mayor de 14 años (o contar con autorización parental).</li>
+                            <li>Proporcionar información veraz y actualizada.</li>
+                            <li>Ser responsable de la confidencialidad de tu cuenta (cuando exista acceso con usuario).</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-upload"></i> 4. Contenido Generado por el Usuario</h2>
+                        <p>JNOB FIT permite crear y compartir rutinas. Al compartir contenido:</p>
+                        <ul>
+                            <li>Nos concedes una licencia no exclusiva, mundial y gratuita para alojar, mostrar y distribuir dicho contenido dentro de la plataforma.</li>
+                            <li>Garantizas que tienes los derechos necesarios y que no infringe propiedad intelectual de terceros ni leyes.</li>
+                            <li>JNOB FIT puede moderar o eliminar contenido inapropiado.</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-copyright"></i> 5. Propiedad Intelectual</h2>
+                        <p>Todos los derechos sobre la marca <strong>JNOB FIT</strong>, el logotipo, el diseño de la web, el software y los contenidos originales (textos, gráficos, interfaces) son propiedad de JNOB FIT o sus licenciantes. Queda prohibida la reproducción, distribución o modificación sin autorización expresa.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-exclamation-triangle"></i> 6. Limitación de Responsabilidad</h2>
+                        <p>La aplicación se proporciona <strong>"tal cual"</strong> y <strong>"según disponibilidad"</strong>. En la medida máxima permitida por la ley, JNOB FIT no será responsable por:</p>
+                        <ul>
+                            <li>Daños indirectos, incidentales o consecuentes.</li>
+                            <li>Pérdida de datos o interrupción del servicio.</li>
+                            <li>Resultados del entrenamiento (cada usuario es responsable de su salud y debe consultar a un profesional).</li>
+                        </ul>
+                        <div class="legal-highlight">
+                            <i class="fas fa-heartbeat"></i> 
+                            <strong>Descargo de responsabilidad médico:</strong> JNOB FIT no es un sustituto del consejo médico profesional. Consulta con un especialista antes de iniciar cualquier programa de entrenamiento.
+                        </div>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-ban"></i> 7. Conductas Prohibidas</h2>
+                        <ul>
+                            <li>Usar la app para actividades ilícitas o fraudulentas.</li>
+                            <li>Intentar acceder a áreas restringidas o vulnerar la seguridad.</li>
+                            <li>Publicar contenido ofensivo, discriminatorio, violento o con derechos de autor sin permiso.</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-link"></i> 8. Enlaces a Terceros</h2>
+                        <p>Nuestra web puede contener enlaces a sitios externos (ej. Google Play). No controlamos ni asumimos responsabilidad por el contenido o prácticas de privacidad de dichos sitios.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-gavel"></i> 9. Legislación Aplicable y Jurisdicción</h2>
+                        <p>Estos términos se rigen por la legislación <strong>española</strong>. Para cualquier controversia, ambas partes se someten a los juzgados y tribunales de la ciudad de <strong>Madrid</strong>.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-envelope"></i> 10. Contacto</h2>
+                        <p>Para consultas sobre estos términos, escríbenos a: <a href="mailto:legal@jnobfit.app" style="color: var(--gold);">legal@jnobfit.app</a></p>
+                    </div>
+                </div>
+
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i> Volver a JNOB FIT
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="/logos/logo-circle.svg" alt="JNOB FIT">
+                    </div>
+                    <p>Transformando la manera en que el mundo entrena.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="/#features">Características</a></li>
+                            <li><a href="/#beta">Acceso Beta</a></li>
+                            <li><a href="/#faq">Preguntas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacidad.html">Privacidad</a></li>
+                            <li><a href="terminos.html">Términos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Descargar</h4>
+                        <ul>
+                            <li><a href="#">Android (Próximamente)</a></li>
+                            <li><a href="#">iOS (Próximamente)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 JNOB FIT. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJVPL00EDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WJVPL00EDV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidad de JNOB FIT. Transparencia sobre cómo gestionamos tus datos personales.">
+    <title>Política de Privacidad · JNOB FIT</title>
+    <link rel="icon" type="image/png" href="/logos/logo-circle.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para páginas legales */
+        .legal-page {
+            padding: calc(120px + var(--space-2xl)) 0 var(--space-3xl);
+            position: relative;
+            z-index: 1;
+        }
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: var(--space-lg);
+        }
+        .legal-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gold), #f5e7a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-sm);
+        }
+        .legal-header .last-updated {
+            color: var(--gray-400);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+        }
+        .legal-header .last-updated i {
+            color: var(--gold);
+        }
+        .legal-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+        }
+        .legal-section {
+            background: rgba(255,255,255,0.02);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            border-left: 4px solid var(--gold);
+            transition: all 0.2s ease;
+        }
+        .legal-section:hover {
+            background: rgba(212, 175, 55, 0.05);
+            border-left-color: var(--gold-light);
+        }
+        .legal-section h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        .legal-section h2 i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        .legal-section h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin: var(--space-md) 0 var(--space-sm);
+        }
+        .legal-section p, .legal-section li {
+            color: var(--gray-200);
+            line-height: 1.7;
+            margin-bottom: var(--space-sm);
+        }
+        .legal-section ul, .legal-section ol {
+            padding-left: var(--space-lg);
+            margin-bottom: var(--space-md);
+        }
+        .legal-section li {
+            margin-bottom: var(--space-xs);
+        }
+        .legal-section strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+        .legal-highlight {
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            margin-top: var(--space-md);
+        }
+        .legal-highlight i {
+            color: var(--gold);
+            margin-right: var(--space-xs);
+        }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            margin-top: var(--space-xl);
+            color: var(--gray-400);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .back-home:hover {
+            color: var(--gold);
+        }
+        @media (max-width: 768px) {
+            .legal-container {
+                padding: var(--space-lg);
+            }
+            .legal-section {
+                padding: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Navegación simplificada -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="/logos/logo-with-icon.svg" alt="JNOB FIT"></a>
+            </div>
+            <a href="/#beta" class="nav-cta">
+                <span>Acceso Beta</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contenido legal -->
+    <section class="legal-page">
+        <div class="container">
+            <div class="legal-container">
+                <div class="legal-header">
+                    <h1>Política de Privacidad</h1>
+                    <div class="last-updated">
+                        <i class="fas fa-calendar-alt"></i>
+                        Última actualización: 12 de febrero de 2026
+                    </div>
+                </div>
+
+                <div class="legal-content">
+                    <div class="legal-section">
+                        <h2><i class="fas fa-flag"></i> 1. Identidad del Responsable</h2>
+                        <p><strong>JNOB FIT</strong> es una plataforma de entrenamiento personalizable. El responsable del tratamiento de tus datos es:</p>
+                        <ul>
+                            <li><strong>Denominación:</strong> JNOB FIT (proyecto en fase beta).</li>
+                            <li><strong>Contacto:</strong> <a href="mailto:privacy@jnobfit.app" style="color: var(--gold);">privacy@jnobfit.app</a></li>
+                            <li><strong>Finalidad:</strong> Gestión de usuarios beta, mejora de la app y comunicaciones comerciales (si aceptas).</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-database"></i> 2. Datos que Recopilamos</h2>
+                        <p><strong>2.1 Datos que nos proporcionas voluntariamente:</strong></p>
+                        <ul>
+                            <li>Dirección de correo electrónico (al registrarte en la beta).</li>
+                            <li>Comunicaciones que nos envías vía email o formularios.</li>
+                        </ul>
+                        <p><strong>2.2 Datos recopilados automáticamente (Google Analytics):</strong></p>
+                        <ul>
+                            <li>Dirección IP (anónima).</li>
+                            <li>Tipo de dispositivo, navegador y sistema operativo.</li>
+                            <li>Páginas visitadas, tiempo de permanencia y origen del tráfico.</li>
+                        </ul>
+                        <div class="legal-highlight">
+                            <i class="fas fa-info-circle"></i> 
+                            <strong>Cookies:</strong> Utilizamos cookies técnicas y de analytics (Google Analytics). Puedes gestionarlas en la configuración de tu navegador.
+                        </div>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-bullseye"></i> 3. Finalidades y Base Legal</h2>
+                        <table style="width:100%; border-collapse: collapse; margin: var(--space-md) 0;">
+                            <tr style="border-bottom: 1px solid rgba(212,175,55,0.3);">
+                                <th style="text-align: left; padding: var(--space-sm); color: var(--gold);">Finalidad</th>
+                                <th style="text-align: left; padding: var(--space-sm); color: var(--gold);">Base legal</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-sm);">Gestionar tu acceso a la beta</td>
+                                <td style="padding: var(--space-sm);">Ejecución de un acuerdo (términos de la beta)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-sm);">Enviar información sobre la app y novedades</td>
+                                <td style="padding: var(--space-sm);">Consentimiento explícito (casilla de verificación)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-sm);">Analizar el uso de la web para mejoras</td>
+                                <td style="padding: var(--space-sm);">Interés legítimo (Google Analytics con IP anonimizada)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-share-alt"></i> 4. Cesiones y Transferencias Internacionales</h2>
+                        <p><strong>No</strong> vendemos tus datos a terceros. Utilizamos proveedores como:</p>
+                        <ul>
+                            <li><strong>Google LLC</strong> (Google Analytics). Puede implicar transferencias a EE.UU. amparadas en el Escudo de Privacidad (GDPR) o Cláusulas Contractuales Tipo.</li>
+                            <li><strong>Netlify</strong> (alojamiento web). Sus servidores pueden estar en EE.UU. y UE.</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-user-lock"></i> 5. Tus Derechos</h2>
+                        <p>Puedes ejercer los derechos de <strong>acceso, rectificación, supresión, portabilidad, limitación y oposición</strong> enviando un email a <a href="mailto:privacy@jnobfit.app" style="color: var(--gold);">privacy@jnobfit.app</a>. Acreditando tu identidad. Te responderemos en un máximo de 30 días.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-shield-alt"></i> 6. Seguridad</h2>
+                        <p>Aplicamos medidas técnicas y organizativas (cifrado SSL, acceso restringido) para proteger tus datos contra accesos no autorizados. Sin embargo, ninguna transmisión por Internet es 100% segura.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-clock"></i> 7. Plazo de Conservación</h2>
+                        <p>Conservamos tu email mientras mantengas tu registro en la beta o hasta que solicites su baja. Los datos de Analytics se conservan 26 meses (política de Google).</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-child"></i> 8. Menores de Edad</h2>
+                        <p>Nuestros servicios no están dirigidos a menores de 14 años. Si eres padre/madre y detectas que un menor nos ha facilitado datos, contáctanos para eliminarlos.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2><i class="fas fa-pencil-alt"></i> 9. Cambios en la Política</h2>
+                        <p>Actualizaremos este documento cuando sea necesario. La versión vigente estará siempre disponible en esta URL.</p>
+                    </div>
+                </div>
+
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i> Volver a JNOB FIT
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (mismo estilo que index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="/logos/logo-circle.svg" alt="JNOB FIT">
+                    </div>
+                    <p>Transformando la manera en que el mundo entrena.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="/#features">Características</a></li>
+                            <li><a href="/#beta">Acceso Beta</a></li>
+                            <li><a href="/#faq">Preguntas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacidad.html">Privacidad</a></li>
+                            <li><a href="terminos.html">Términos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Descargar</h4>
+                        <ul>
+                            <li><a href="#">Android (Próximamente)</a></li>
+                            <li><a href="#">iOS (Próximamente)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 JNOB FIT. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
