@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+  <!-- Fondo negro -->
+  <rect width="400" height="300" fill="#0f0f0f"/>
+
+  <!-- Parallelogram diagonal oscuro -->
+  <polygon points="108,20 316,20 292,280 84,280" fill="#1c2110"/>
+
+  <!-- Franja diagonal -->
+  <line x1="84" y1="285" x2="316" y2="15" stroke="#252c12" stroke-width="52" opacity="0.6"/>
+
+  <!--
+    J VERSION 1 - Geométrica Clean
+    Sin serifas. Trazo uniforme con stroke.
+    La J clásica: palo vertical + gancho curvo izquierda abajo
+  -->
+  <g stroke="#c9b86a" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Palo vertical -->
+    <line x1="200" y1="60" x2="200" y2="190"/>
+    <!-- Gancho inferior: curva de la J hacia la izquierda -->
+    <path d="M 200,190 Q 200,248 163,248 Q 130,248 122,220"/>
+  </g>
+
+</svg>

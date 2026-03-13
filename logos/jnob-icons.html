@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>JNOB - App Icons Preview</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#111; font-family: sans-serif; color:#fff; padding:3rem; }
+  h1 { text-align:center; color:#BCA95B; margin-bottom:0.5rem; font-size:2rem; }
+  p.sub { text-align:center; color:#666; margin-bottom:3rem; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:2rem; }
+  .card { background:#1a1a1a; border:1px solid #333; border-radius:1rem; padding:2rem; text-align:center; }
+  .card h3 { color:#BCA95B; margin-bottom:0.5rem; }
+  .card p  { color:#666; font-size:0.85rem; margin-bottom:1.5rem; }
+  .preview { background:#0a0a0a; border-radius:0.5rem; padding:2rem; display:flex; justify-content:center; margin-bottom:1.5rem; }
+  .preview.light { background:#e8e8e8; }
+  .btn { display:inline-block; padding:0.6rem 1.4rem; background:#BCA95B; color:#000; border-radius:0.5rem; font-weight:700; cursor:pointer; border:none; font-size:0.9rem; }
+  .btn:hover { opacity:0.85; }
+</style>
+</head>
+<body>
+
+<h1>JNOB FIT — App Icons</h1>
+<p class="sub">Todas las versiones son 100% compatibles con Android Studio (sin &lt;text&gt;)</p>
+
+<div class="grid">
+
+  <!-- VERSION 1: Minimalista Bold -->
+  <div class="card">
+    <h3>V1 · Minimalista Bold</h3>
+    <p>J grande centrada, FIT en esquina inferior</p>
+    <div class="preview">
+      <svg id="v1" width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="512" height="512" rx="110" fill="#0A0A0A"/>
+        <!-- J: stem -->
+        <rect x="210" y="80" width="72" height="260" rx="10" fill="#BCA95B"/>
+        <!-- J: hook — outer arc then inner arc -->
+        <path d="
+          M282,300
+          L282,370
+          C282,435 235,460 190,450
+          C145,440 118,408 120,370
+          L120,345
+          L175,345
+          L175,368
+          C174,385 182,398 196,402
+          C212,406 228,396 228,375
+          L228,300
+          Z
+        " fill="#BCA95B"/>
+        <!-- FIT letters -->
+        <!-- F -->
+        <rect x="108" y="400" width="14" height="72" rx="3" fill="#737B86"/>
+        <rect x="108" y="400" width="48" height="14" rx="3" fill="#737B86"/>
+        <rect x="108" y="432" width="36" height="12" rx="3" fill="#737B86"/>
+        <!-- I -->
+        <rect x="168" y="400" width="14" height="72" rx="3" fill="#737B86"/>
+        <!-- T -->
+        <rect x="192" y="400" width="52" height="14" rx="3" fill="#737B86"/>
+        <rect x="211" y="400" width="14" height="72" rx="3" fill="#737B86"/>
+      </svg>
+    </div>
+    <button class="btn" onclick="downloadSVG('v1','jnob-icon-v1')">⬇ Descargar SVG</button>
+  </div>
+
+  <!-- VERSION 2: Con frame dorado -->
+  <div class="card">
+    <h3>V2 · Frame Dorado</h3>
+    <p>Marco con esquinas en L, J centrada</p>
+    <div class="preview">
+      <svg id="v2" width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="512" height="512" rx="110" fill="#0A0A0A"/>
+        <!-- Corner L frame top-left -->
+        <path d="M60,60 L60,160 M60,60 L160,60" stroke="#BCA95B" stroke-width="14" stroke-linecap="round" fill="none"/>
+        <!-- Corner L frame bottom-right -->
+        <path d="M452,452 L452,352 M452,452 L352,452" stroke="#BCA95B" stroke-width="14" stroke-linecap="round" fill="none"/>
+        <!-- J: stem -->
+        <rect x="210" y="90" width="68" height="235" rx="10" fill="#BCA95B"/>
+        <!-- J: hook -->
+        <path d="
+          M278,285
+          L278,355
+          C278,418 233,442 190,432
+          C148,422 124,392 126,356
+          L126,333
+          L178,333
+          L178,354
+          C177,370 185,382 198,386
+          C213,390 228,381 228,362
+          L228,285
+          Z
+        " fill="#BCA95B"/>
+        <!-- FIT -->
+        <rect x="128" y="430" width="13" height="55" rx="3" fill="#737B86"/>
+        <rect x="128" y="430" width="44" height="13" rx="3" fill="#737B86"/>
+        <rect x="128" y="458" width="32" height="11" rx="3" fill="#737B86"/>
+        <rect x="183" y="430" width="13" height="55" rx="3" fill="#737B86"/>
+        <rect x="206" y="430" width="48" height="13" rx="3" fill="#737B86"/>
+        <rect x="223" y="430" width="13" height="55" rx="3" fill="#737B86"/>
+      </svg>
+    </div>
+    <button class="btn" onclick="downloadSVG('v2','jnob-icon-v2')">⬇ Descargar SVG</button>
+  </div>
+
+  <!-- VERSION 3: Círculo dorado -->
+  <div class="card">
+    <h3>V3 · Círculo Dorado</h3>
+    <p>J en círculo, estilo insignia</p>
+    <div class="preview">
+      <svg id="v3" width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="512" height="512" rx="110" fill="#0A0A0A"/>
+        <!-- Gold circle ring -->
+        <circle cx="230" cy="230" r="170" stroke="#BCA95B" stroke-width="16" fill="none"/>
+        <!-- J: stem -->
+        <rect x="196" y="100" width="62" height="215" rx="8" fill="#BCA95B"/>
+        <!-- J: hook -->
+        <path d="
+          M258,278
+          L258,340
+          C258,396 216,418 178,408
+          C140,398 120,371 122,340
+          L122,318
+          L168,318
+          L168,338
+          C167,351 174,361 186,364
+          C199,368 214,360 214,342
+          L214,278
+          Z
+        " fill="#BCA95B"/>
+        <!-- FIT below circle -->
+        <rect x="330" y="360" width="12" height="52" rx="3" fill="#737B86"/>
+        <rect x="330" y="360" width="42" height="12" rx="3" fill="#737B86"/>
+        <rect x="330" y="387" width="30" height="11" rx="3" fill="#737B86"/>
+        <rect x="382" y="360" width="12" height="52" rx="3" fill="#737B86"/>
+        <rect x="402" y="360" width="44" height="12" rx="3" fill="#737B86"/>
+        <rect x="419" y="360" width="12" height="52" rx="3" fill="#737B86"/>
+      </svg>
+    </div>
+    <button class="btn" onclick="downloadSVG('v3','jnob-icon-v3')">⬇ Descargar SVG</button>
+  </div>
+
+  <!-- VERSION 4: Fondo dorado -->
+  <div class="card">
+    <h3>V4 · Fondo Dorado</h3>
+    <p>Inversión de colores — J negra sobre dorado</p>
+    <div class="preview">
+      <svg id="v4" width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="512" height="512" rx="110" fill="#BCA95B"/>
+        <!-- J: stem -->
+        <rect x="210" y="70" width="72" height="255" rx="10" fill="#0A0A0A"/>
+        <!-- J: hook -->
+        <path d="
+          M282,285
+          L282,358
+          C282,425 234,450 188,440
+          C142,430 115,397 117,358
+          L117,334
+          L170,334
+          L170,356
+          C169,374 178,387 193,391
+          C210,396 228,386 228,365
+          L228,285
+          Z
+        " fill="#0A0A0A"/>
+        <!-- FIT in dark gray -->
+        <rect x="108" y="412" width="14" height="70" rx="3" fill="#1a1a1a"/>
+        <rect x="108" y="412" width="50" height="14" rx="3" fill="#1a1a1a"/>
+        <rect x="108" y="444" width="36" height="12" rx="3" fill="#1a1a1a"/>
+        <rect x="170" y="412" width="14" height="70" rx="3" fill="#1a1a1a"/>
+        <rect x="194" y="412" width="52" height="14" rx="3" fill="#1a1a1a"/>
+        <rect x="213" y="412" width="14" height="70" rx="3" fill="#1a1a1a"/>
+      </svg>
+    </div>
+    <button class="btn" onclick="downloadSVG('v4','jnob-icon-v4')">⬇ Descargar SVG</button>
+  </div>
+
+  <!-- VERSION 5: Línea diagonal -->
+  <div class="card">
+    <h3>V5 · Diagonal Split</h3>
+    <p>División diagonal dorado / negro</p>
+    <div class="preview">
+      <svg id="v5" width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="512" height="512" rx="110" fill="#0A0A0A"/>
+        <!-- Diagonal gold slab -->
+        <path d="M0,512 L0,280 L280,0 L512,0 L512,120 L120,512 Z" fill="#BCA95B" opacity="0.12"/>
+        <!-- Thin gold diagonal line -->
+        <path d="M80,512 L512,80" stroke="#BCA95B" stroke-width="3" opacity="0.4"/>
+        <!-- J: stem -->
+        <rect x="192" y="80" width="70" height="248" rx="10" fill="#BCA95B"/>
+        <!-- J: hook -->
+        <path d="
+          M262,290
+          L262,360
+          C262,422 218,446 175,436
+          C132,426 108,396 110,360
+          L110,336
+          L162,336
+          L162,358
+          C161,374 169,386 182,390
+          C197,394 212,385 212,365
+          L212,290
+          Z
+        " fill="#BCA95B"/>
+        <!-- FIT -->
+        <rect x="308" y="390" width="13" height="58" rx="3" fill="#737B86"/>
+        <rect x="308" y="390" width="46" height="13" rx="3" fill="#737B86"/>
+        <rect x="308" y="418" width="34" height="11" rx="3" fill="#737B86"/>
+        <rect x="363" y="390" width="13" height="58" rx="3" fill="#737B86"/>
+        <rect x="385" y="390" width="48" height="13" rx="3" fill="#737B86"/>
+        <rect x="402" y="390" width="13" height="58" rx="3" fill="#737B86"/>
+      </svg>
+    </div>
+    <button class="btn" onclick="downloadSVG('v5','jnob-icon-v5')">⬇ Descargar SVG</button>
+  </div>
+
+  <!-- VERSION 6: Solo J ultralimpia -->
+  <div class="card">
+    <h3>V6 · Solo J Ultra Clean</h3>
+    <p>Maximalista — solo la J, sin FIT</p>
+    <div class="preview">
+      <svg id="v6" width="200" height="200" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="512" height="512" rx="110" fill="#0A0A0A"/>
+        <!-- Subtle glow ring -->
+        <circle cx="256" cy="256" r="210" stroke="#BCA95B" stroke-width="2" fill="none" opacity="0.15"/>
+        <!-- J: stem wide -->
+        <rect x="180" y="60" width="88" height="290" rx="12" fill="#BCA95B"/>
+        <!-- J: hook large -->
+        <path d="
+          M268,310
+          L268,392
+          C268,465 212,496 160,482
+          C108,468 76,430 78,388
+          L78,356
+          L142,356
+          L142,386
+          C141,406 152,420 170,425
+          C190,430 210,418 210,392
+          L210,310
+          Z
+        " fill="#BCA95B"/>
+        <!-- Small dot accent top-right -->
+        <circle cx="410" cy="102" r="14" fill="#BCA95B" opacity="0.5"/>
+        <circle cx="410" cy="102" r="7" fill="#BCA95B"/>
+      </svg>
+    </div>
+    <button class="btn" onclick="downloadSVG('v6','jnob-icon-v6')">⬇ Descargar SVG</button>
+  </div>
+
+</div>
+
+<script>
+function downloadSVG(id, filename) {
+  const svg = document.getElementById(id).cloneNode(true);
+  // Reset display size to 512x512 for export
+  svg.setAttribute('width', '512');
+  svg.setAttribute('height', '512');
+  const blob = new Blob([new XMLSerializer().serializeToString(svg)], {type:'image/svg+xml'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename + '.svg';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+
+</body>
+</html>
