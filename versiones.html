@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJVPL00EDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WJVPL00EDV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historial de versiones beta de JNOB FIT. Descarga APKs anteriores y consulta el changelog.">
+    <title>Historial de versiones · JNOB FIT</title>
+    <link rel="icon" type="image/svg+xml" href="logos/logo-circle.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logos/logo-with-icon.svg" alt="JNOB FIT">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Funciones</a>
+                <a href="index.html#descarga">Descargar</a>
+                <a href="versiones.html">Versiones</a>
+                <a href="index.html#faq">FAQ</a>
+            </div>
+            <a href="index.html#descarga" class="nav-cta">
+                <span>Descargar Beta</span>
+                <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Historial de versiones</h1>
+            <p>Todas las releases beta de JNOB FIT. Descarga la última versión o una anterior si lo necesitas.</p>
+        </div>
+    </section>
+
+    <section class="releases-page">
+        <div class="container">
+            <div class="release-list" id="release-list">
+                <div class="release-card">
+                    <div class="release-card-body">
+                        <p style="color: var(--gray-400);">Cargando versiones…</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Volver al inicio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logos/logo-circle.svg" alt="JNOB FIT">
+                    </div>
+                    <p>Motor de entrenamiento personalizable. Beta Android disponible.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="index.html#features">Funciones</a></li>
+                            <li><a href="index.html#descarga">Descargar Beta</a></li>
+                            <li><a href="versiones.html">Versiones</a></li>
+                            <li><a href="index.html#faq">Preguntas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacidad.html">Privacidad</a></li>
+                            <li><a href="terminos.html">Términos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Descargar</h4>
+                        <ul>
+                            <li><a href="#" id="footer-apk-link" download>Android — Beta APK</a></li>
+                            <li><a href="https://play.google.com/store" target="_blank" rel="noopener">Play Store (próximamente)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JNOB FIT. Todos los derechos reservados. · <span id="footer-version" class="footer-version">Beta</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/releases.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{
+  "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
+  "latest": "1.2.8",
+  "releases": [
+    {
+      "version": "1.2.8",
+      "date": "2026-05-17",
+      "apk": "downloads/jnob-fit-1.2.8-beta.apk",
+      "sizeBytes": 27621451,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Mejoras de estabilidad en ejecución de rutinas",
+        "Ajustes en sincronización offline",
+        "Correcciones generales de la beta"
+      ]
+    },
+    {
+      "version": "1.2.7",
+      "date": "2026-04-24",
+      "apk": "downloads/jnob-fit-1.2.7-beta.apk",
+      "sizeBytes": 27621516,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Actualización de enlaces y mejoras menores",
+        "Correcciones en flujo de entrenamiento"
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-03-28",
+      "apk": "downloads/jnob-fit-1.1.0-beta.apk",
+      "sizeBytes": 20331952,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Nuevas mejoras en registro de sesiones",
+        "Ajustes en temporizadores de descanso"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-03-19",
+      "apk": "downloads/jnob-fit-1.0.0-beta.apk",
+      "sizeBytes": 19455095,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Creación de rutinas con ejercicios y parámetros personalizados",
+        "Registro de sesiones e historial básico",
+        "Temporizadores de descanso entre series",
+        "Primera versión beta pública"
+      ]
+    }
+  ]
+}

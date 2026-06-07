@@ -12,397 +12,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="JNOB FIT - La app definitiva para entrenar sin límites. Ya disponible en beta. Descarga la APK ahora.">
-    <title>JNOB FIT</title>
-    <link rel="icon" type="image/png" href="/logos/logo-circle.svg">
+        content="App beta para crear rutinas personalizadas, registrar entrenamientos y entrenar offline. Descarga la APK para Android.">
+    <title>JNOB FIT — Entrena a tu manera</title>
+    <link rel="icon" type="image/svg+xml" href="logos/logo-circle.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
         rel="stylesheet">
-
-    <!-- Estilos extra para la sección de descarga -->
-    <style>
-        /* === DOWNLOAD SECTION === */
-        .download-section {
-            padding: var(--space-3xl) 0;
-            background: linear-gradient(180deg, transparent, rgba(212, 175, 55, 0.04), transparent);
-            position: relative;
-            z-index: 1;
-        }
-
-        .download-inner {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .download-header {
-            text-align: center;
-            margin-bottom: var(--space-2xl);
-        }
-
-        .download-available-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 22px;
-            background: rgba(34, 197, 94, 0.12);
-            border: 1px solid rgba(34, 197, 94, 0.4);
-            border-radius: 999px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: #4ade80;
-            margin-bottom: var(--space-lg);
-            letter-spacing: 0.5px;
-        }
-
-        .download-available-badge .live-dot {
-            width: 9px;
-            height: 9px;
-            background: #4ade80;
-            border-radius: 50%;
-            box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
-            animation: livePulse 1.8s ease-in-out infinite;
-        }
-
-        @keyframes livePulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
-            }
-
-            70% {
-                box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
-            }
-        }
-
-        .download-header h2 {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            margin-bottom: var(--space-md);
-        }
-
-        .download-header p {
-            color: var(--gray-200);
-            font-size: 1.1rem;
-            max-width: 560px;
-            margin: 0 auto;
-            line-height: 1.7;
-        }
-
-        .download-card {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.07), rgba(212, 175, 55, 0.03));
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            border-radius: 24px;
-            padding: var(--space-2xl);
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: var(--space-2xl);
-            align-items: center;
-            margin-bottom: var(--space-xl);
-        }
-
-        .download-info h3 {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: var(--space-sm);
-        }
-
-        .download-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-md);
-            margin-bottom: var(--space-lg);
-        }
-
-        .download-meta-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--gray-400);
-            font-size: 0.9rem;
-        }
-
-        .download-meta-item i {
-            color: var(--gold);
-            font-size: 0.85rem;
-        }
-
-        .download-meta-item strong {
-            color: var(--gray-200);
-        }
-
-        .download-requirements {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-sm);
-        }
-
-        .req-tag {
-            padding: 5px 14px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 999px;
-            font-size: 0.8rem;
-            color: var(--gray-400);
-        }
-
-        .download-btn-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--space-md);
-        }
-
-        .btn-download {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            padding: 18px 32px;
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            color: var(--black);
-            text-decoration: none;
-            font-family: var(--font-display);
-            font-size: 1.1rem;
-            font-weight: 800;
-            border-radius: 16px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .btn-download::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .btn-download:hover::before {
-            left: 100%;
-        }
-
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.4);
-        }
-
-        .btn-download .download-icon {
-            font-size: 1.4rem;
-        }
-
-        .btn-download-sub {
-            font-size: 0.75rem;
-            font-weight: 500;
-            opacity: 0.7;
-        }
-
-        .download-version-info {
-            font-size: 0.8rem;
-            color: var(--gray-400);
-            text-align: center;
-        }
-
-        .download-install-note {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 16px;
-            padding: var(--space-lg) var(--space-xl);
-            display: flex;
-            gap: var(--space-lg);
-            align-items: flex-start;
-        }
-
-        .install-note-icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .install-note-text h4 {
-            font-weight: 700;
-            margin-bottom: var(--space-xs);
-            font-size: 1rem;
-        }
-
-        .install-note-text p {
-            color: var(--gray-400);
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .install-note-text ol {
-            color: var(--gray-400);
-            font-size: 0.9rem;
-            margin: var(--space-xs) 0 0 var(--space-md);
-            line-height: 1.8;
-        }
-
-        .install-note-text ol li span {
-            color: var(--gray-200);
-        }
-
-        /* === CHANGELOG === */
-        .changelog {
-            margin-top: var(--space-xl);
-        }
-
-        .changelog-header {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-            margin-bottom: var(--space-lg);
-        }
-
-        .changelog-header h3 {
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .changelog-version-tag {
-            padding: 4px 12px;
-            background: rgba(212, 175, 55, 0.12);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 999px;
-            font-size: 0.78rem;
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        .changelog-items {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .changelog-item {
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-        }
-
-        .changelog-item .cl-icon {
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            margin-top: 1px;
-        }
-
-        .changelog-item p {
-            font-size: 0.9rem;
-            color: var(--gray-200);
-            line-height: 1.5;
-        }
-
-        .changelog-item p strong {
-            color: var(--white);
-        }
-
-        /* === HERO BADGE update === */
-        .hero-badge.live {
-            background: rgba(34, 197, 94, 0.1);
-            border-color: rgba(34, 197, 94, 0.35);
-            color: #4ade80;
-        }
-
-        .hero-badge.live .badge-dot {
-            background: #4ade80;
-            box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);
-        }
-
-        /* === Responsive download === */
-        @media (max-width: 768px) {
-            .download-card {
-                grid-template-columns: 1fr;
-                gap: var(--space-xl);
-            }
-
-            .download-btn-group {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
-
-            .download-install-note {
-                flex-direction: column;
-                gap: var(--space-sm);
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <canvas id="backgroundCanvas"></canvas>
-
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <img src="/logos/logo-with-icon.svg" alt="JNOB FIT">
+            <a href="index.html" class="logo">
+                <img src="logos/logo-with-icon.svg" alt="JNOB FIT">
+            </a>
+            <div class="nav-links">
+                <a href="#features">Funciones</a>
+                <a href="#descarga">Descargar</a>
+                <a href="versiones.html">Versiones</a>
+                <a href="#faq">FAQ</a>
             </div>
             <a href="#descarga" class="nav-cta">
                 <span>Descargar Beta</span>
-                <i class="fas fa-arrow-down"></i>
+                <i class="fas fa-download"></i>
             </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-glow"></div>
         <div class="hero-container">
             <div class="hero-content">
-                <!-- BADGE ACTUALIZADO: ya no dice "próximamente" -->
-                <div class="hero-badge live">
+                <div class="hero-badge">
                     <span class="badge-dot"></span>
-                    <span>Beta Disponible Ahora</span>
+                    <span>Beta Android disponible</span>
                 </div>
                 <h1 class="hero-title">
-                    Tu Entrenamiento,
-                    <span class="gradient-text">Tus Reglas</span>
+                    Tu rutina. Tus parámetros. <span class="gradient-text">Tu progreso.</span>
                 </h1>
                 <p class="hero-subtitle">
-                    La primera app donde <strong>tú</strong> defines cada parámetro, cada métrica, cada objetivo.
-                    Desde powerlifting hasta yoga. Sin plantillas genéricas. Solo tu visión.
+                    JNOB FIT es un motor de entrenamiento donde tú defines ejercicios, series y métricas.
+                    Hoy optimizado para gimnasio; diseñado para crecer a más deportes.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Personalizable</div>
+                        <div class="stat-number">Offline</div>
+                        <div class="stat-label">Entrena sin conexión</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">Deportes</div>
+                        <div class="stat-number">Custom</div>
+                        <div class="stat-label">Rutinas a medida</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat">
-                        <div class="stat-number">0</div>
-                        <div class="stat-label">Límites</div>
+                        <div class="stat-number">Beta</div>
+                        <div class="stat-label">Gratis ahora</div>
                     </div>
                 </div>
                 <div class="hero-buttons">
                     <a href="#descarga" class="btn-primary">
                         <i class="fas fa-download"></i>
                         <span>Descargar APK</span>
-                        <div class="btn-shine"></div>
                     </a>
                     <a href="#features" class="btn-secondary">
-                        <span>Descubrir Más</span>
+                        <span>Ver funciones</span>
                         <i class="fas fa-arrow-down"></i>
                     </a>
                 </div>
@@ -410,69 +85,51 @@
             <div class="hero-visual">
                 <div class="phone-mockup">
                     <div class="phone-screen">
-                        <img src="/images/home_app.png" alt="JNOB FIT App Interface" class="app-screenshot">
+                        <img src="images/home_app.png" alt="Captura de pantalla de JNOB FIT" class="app-screenshot">
                     </div>
-                    <div class="phone-glow"></div>
-                </div>
-                <div class="floating-card card-1">
-                    <div class="card-icon"></div>
-                    <div class="card-text">Sets personalizados</div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon"></div>
-                    <div class="card-text">Progreso detallado</div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon"></div>
-                    <div class="card-text">Metas adaptables</div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-line"></div>
-            <span>Scroll</span>
         </div>
     </section>
 
-    <!-- Problem/Solution Section -->
     <section class="problem-solution">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">El Problema</span>
-                <h2>Las Apps de Fitness Te Limitan</h2>
+            <div class="section-header centered reveal">
+                <span class="section-label">El problema</span>
+                <h2>Las apps genéricas no encajan con tu entrenamiento</h2>
             </div>
             <div class="comparison-grid">
-                <div class="comparison-side other-apps">
+                <div class="comparison-side other-apps reveal">
                     <div class="side-header">
-                        <h3>Otras Apps</h3>
+                        <h3>Otras apps</h3>
                     </div>
                     <ul class="comparison-list">
                         <li>
                             <i class="fas fa-times"></i>
                             <div>
                                 <strong>Plantillas rígidas</strong>
-                                <span>No puedes modificar ejercicios según tus necesidades</span>
+                                <span>Te obligan a adaptarte a rutinas predefinidas</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-times"></i>
                             <div>
-                                <strong>Métricas limitadas</strong>
-                                <span>Solo peso y repeticiones, nada más</span>
+                                <strong>Parámetros fijos</strong>
+                                <span>Solo peso y repeticiones, sin flexibilidad real</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-times"></i>
                             <div>
-                                <strong>Un solo deporte</strong>
-                                <span>Necesitas una app diferente para cada actividad</span>
+                                <strong>Sin control offline</strong>
+                                <span>Si no hay red, pierdes acceso a tu rutina</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-times"></i>
                             <div>
-                                <strong>Comunidad pasiva</strong>
-                                <span>Rutinas creadas por "expertos", no por atletas reales</span>
+                                <strong>Funciones genéricas</strong>
+                                <span>Herramientas que no encajan con tu método</span>
                             </div>
                         </li>
                     </ul>
@@ -480,7 +137,7 @@
                 <div class="comparison-divider">
                     <span>VS</span>
                 </div>
-                <div class="comparison-side jnob-fit">
+                <div class="comparison-side jnob-fit reveal">
                     <div class="side-header">
                         <h3>JNOB FIT</h3>
                     </div>
@@ -488,29 +145,29 @@
                         <li>
                             <i class="fas fa-check"></i>
                             <div>
-                                <strong>Libertad total</strong>
-                                <span>Crea desde cero o modifica cada aspecto de tu rutina</span>
+                                <strong>Rutinas propias</strong>
+                                <span>Crea y edita entrenamientos desde cero</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-check"></i>
                             <div>
-                                <strong>Parámetros infinitos</strong>
-                                <span>Tiempo, distancia, ritmo cardíaco, intensidad - lo que necesites</span>
+                                <strong>Parámetros configurables</strong>
+                                <span>Define peso, reps, tiempo y más por ejercicio</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-check"></i>
                             <div>
-                                <strong>Multi-deporte real</strong>
-                                <span>Gym, running, natación, boxeo, yoga - todo en una app</span>
+                                <strong>Offline-first</strong>
+                                <span>Entrena sin conexión; sincroniza cuando vuelve la red</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-check"></i>
                             <div>
-                                <strong>Comunidad activa</strong>
-                                <span>Comparte y descubre rutinas creadas por atletas como tú</span>
+                                <strong>Motor extensible</strong>
+                                <span>Arquitectura pensada para crecer más allá del gym</span>
                             </div>
                         </li>
                     </ul>
@@ -519,379 +176,296 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <div class="section-header centered">
-                <span class="section-label">Características</span>
-                <h2>Todo Lo Que Necesitas, Nada Que Te Sobre</h2>
+            <div class="section-header centered reveal">
+                <span class="section-label">Funciones</span>
+                <h2>Lo que puedes hacer hoy en la beta</h2>
+                <p>Herramientas reales para planificar, ejecutar y registrar tu entrenamiento de gimnasio.</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card large">
-                    <div class="feature-visual"></div>
-                    <div class="feature-content">
-                        <h3>Personalización Sin Límites</h3>
-                        <p>Define cada ejercicio con múltiples parámetros: series, repeticiones, peso, tiempo,
-                            distancia, descansos. Crea nuevos ejercicios. Inventa tu propio deporte si quieres.</p>
-                        <ul class="feature-list">
-                            <li>Sets personalizables con contadores de descanso</li>
-                            <li>Parámetros adaptables a cualquier métrica</li>
-                            <li>Posiciones ordenables para tu flujo perfecto</li>
-                        </ul>
-                    </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap"><i class="fas fa-list-ul"></i></div>
+                    <h3>Constructor de rutinas</h3>
+                    <p>Crea rutinas con ejercicios, series, orden por días y descansos entre ejercicios.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-visual small"></div>
-                    <h3>Multi-Deporte Real</h3>
-                    <p>No más apps separadas. Gestiona todo tu entrenamiento en un solo lugar.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap"><i class="fas fa-sliders-h"></i></div>
+                    <h3>Parámetros custom</h3>
+                    <p>Configura peso, repeticiones, tiempo y unidades según cada ejercicio.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-visual small"></div>
-                    <h3>Progreso Claro</h3>
-                    <p>Visualiza tu evolución con métricas que realmente importan para tus objetivos.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Ejecución en vivo</h3>
+                    <p>Registra sets durante la sesión con una interfaz pensada para el gimnasio.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-visual small"></div>
-                    <h3>Comunidad Activa</h3>
-                    <p>Comparte tus rutinas, descubre entrenamientos únicos, conecta con atletas.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap"><i class="fas fa-stopwatch"></i></div>
+                    <h3>Timers de descanso</h3>
+                    <p>Contadores automáticos entre series para mantener el ritmo de tu entreno.</p>
                 </div>
-                <div class="feature-card accent">
-                    <div class="feature-content centered">
-                        <h3>¿Tienes Una Idea Única?</h3>
-                        <p>JNOB FIT se adapta a tu creatividad. Crea sistemas de entrenamiento que ni siquiera existen
-                            todavía. Si tiene sentido para ti, funciona en JNOB FIT.</p>
-                    </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap"><i class="fas fa-history"></i></div>
+                    <h3>Historial</h3>
+                    <p>Consulta sesiones anteriores y revisa lo que hiciste en cada entrenamiento.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap"><i class="fas fa-wifi"></i></div>
+                    <h3>Modo offline</h3>
+                    <p>Entrena sin conexión. Tus datos se sincronizan cuando vuelves a tener red.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Use Cases Section -->
-    <section class="use-cases">
+    <section class="how-it-works">
         <div class="container">
-            <div class="section-header centered">
-                <span class="section-label">Para Todos</span>
-                <h2>Tu Deporte, Tu App</h2>
+            <div class="section-header centered reveal">
+                <span class="section-label">Cómo funciona</span>
+                <h2>Tres pasos para empezar</h2>
             </div>
-            <div class="use-cases-slider">
-                <div class="use-case">
-                    <div class="use-case-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000')">
-                    </div>
-                    <div class="use-case-content">
-                        <h3>Gym & Powerlifting</h3>
-                        <p>Registra series, peso, repeticiones, RPE, tempo. Programa tu periodización exacta.</p>
-                    </div>
+            <div class="steps-grid">
+                <div class="step-card reveal">
+                    <div class="step-number">1</div>
+                    <h3>Crea tu rutina</h3>
+                    <p>Define ejercicios, parámetros y series. Organiza los días de la semana a tu gusto.</p>
                 </div>
-                <div class="use-case">
-                    <div class="use-case-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1000')">
-                    </div>
-                    <div class="use-case-content">
-                        <h3>Running & Cardio</h3>
-                        <p>Distancia, pace, intervalos, ritmo cardíaco. Todo lo que necesitas para mejorar tu marca.</p>
-                    </div>
+                <div class="step-card reveal">
+                    <div class="step-number">2</div>
+                    <h3>Entrena y registra</h3>
+                    <p>Ejecuta la sesión, marca cada set y deja que los timers de descanso te guíen.</p>
                 </div>
-                <div class="use-case">
-                    <div class="use-case-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1000')">
-                    </div>
-                    <div class="use-case-content">
-                        <h3>CrossFit & HIIT</h3>
-                        <p>WODs complejos, AMRAPs, EMOMs. Crea entrenamientos que cambian cada día.</p>
-                    </div>
-                </div>
-                <div class="use-case">
-                    <div class="use-case-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000')">
-                    </div>
-                    <div class="use-case-content">
-                        <h3>Yoga & Movilidad</h3>
-                        <p>Duración de posturas, respiración, secuencias. Tu práctica, tu ritmo.</p>
-                    </div>
+                <div class="step-card reveal">
+                    <div class="step-number">3</div>
+                    <h3>Revisa tu historial</h3>
+                    <p>Consulta sesiones pasadas y sigue construyendo sobre lo que ya hiciste.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =============================== -->
-    <!-- NUEVA SECCIÓN: DESCARGA APK     -->
-    <!-- =============================== -->
+    <section class="roadmap">
+        <div class="container">
+            <div class="section-header centered reveal">
+                <span class="section-label">Roadmap</span>
+                <h2>En beta ahora y próximamente</h2>
+                <p>Transparencia sobre lo que ya funciona y lo que estamos construyendo.</p>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-column reveal">
+                    <h3><i class="fas fa-check-circle"></i> En beta ahora</h3>
+                    <ul class="roadmap-list">
+                        <li><i class="fas fa-check"></i> Rutinas y ejecución de gym</li>
+                        <li><i class="fas fa-check"></i> Parámetros personalizados</li>
+                        <li><i class="fas fa-check"></i> Timers y historial básico</li>
+                        <li><i class="fas fa-check"></i> Cuenta con Google y email</li>
+                        <li><i class="fas fa-check"></i> Sincronización offline (en evolución)</li>
+                    </ul>
+                </div>
+                <div class="roadmap-column upcoming reveal">
+                    <h3><i class="fas fa-clock"></i> Próximamente</h3>
+                    <ul class="roadmap-list">
+                        <li><i class="fas fa-circle"></i> Métricas y analítica avanzada</li>
+                        <li><i class="fas fa-circle"></i> Marketplace de rutinas</li>
+                        <li><i class="fas fa-circle"></i> Más deportes (running, natación…)</li>
+                        <li><i class="fas fa-circle"></i> Google Play Store</li>
+                        <li><i class="fas fa-circle"></i> Límites por plan de suscripción</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="download-section" id="descarga">
         <div class="container">
             <div class="download-inner">
-                <div class="download-header">
+                <div class="download-header reveal">
                     <div class="download-available-badge">
                         <span class="live-dot"></span>
-                        Beta Disponible — Android
+                        Beta disponible — Android
                     </div>
                     <h2>Descarga <span class="gradient-text">JNOB FIT</span></h2>
-                    <p>La beta está lista. Instálala directamente en tu Android y empieza a entrenar sin límites hoy
-                        mismo.</p>
+                    <p>Instala la beta directamente en tu Android. Gratis durante el periodo de pruebas.</p>
                 </div>
 
-                <!-- Tarjeta principal de descarga -->
-                <div class="download-card">
+                <div class="download-card reveal">
                     <div class="download-info">
                         <h3>JNOB FIT Beta</h3>
                         <div class="download-meta">
                             <div class="download-meta-item">
                                 <i class="fas fa-tag"></i>
-                                <span>Versión <strong>1.0.0-beta</strong></span>
+                                <span>Versión <strong data-release-version>—</strong></span>
                             </div>
                             <div class="download-meta-item">
                                 <i class="fas fa-calendar"></i>
-                                <!-- Actualiza esta fecha con cada release -->
-                                <span>Actualizado <strong>Jun 2025</strong></span>
+                                <span>Actualizado <strong data-release-date>—</strong></span>
                             </div>
                             <div class="download-meta-item">
                                 <i class="fas fa-weight-hanging"></i>
-                                <span>Tamaño <strong>~28 kb</strong></span>
+                                <span>Tamaño <strong data-release-size>—</strong></span>
                             </div>
                             <div class="download-meta-item">
                                 <i class="fab fa-android"></i>
-                                <span>Android <strong>8.0+</strong></span>
+                                <span>Android <strong data-release-android>8.0+</strong></span>
                             </div>
                         </div>
                         <div class="download-requirements">
                             <span class="req-tag">Android 8.0 Oreo o superior</span>
-                            <span class="req-tag">~100 Kb espacio libre</span>
                             <span class="req-tag">Fuentes desconocidas activo</span>
                         </div>
                     </div>
                     <div class="download-btn-group">
-                        <!-- ⚠️ Cambia el href con la URL real de tu APK -->
-                        <a href="/downloads/jnob-fit-1.0.0-beta.apk" class="btn-download" download
-                            onclick="trackEvent('apk_download', {version: '1.0.0-beta'})">
+                        <a href="#" id="download-btn" class="btn-download" download>
                             <i class="fas fa-download download-icon"></i>
                             <div>
                                 <div>Descargar APK</div>
-                                <div class="btn-download-sub">v1.0.0-beta · Android</div>
+                                <div class="btn-download-sub">v<span data-release-version>—</span> · Android</div>
                             </div>
                         </a>
                         <div class="download-version-info">
-                            <i class="fas fa-shield-alt" style="color: var(--gold); margin-right: 5px;"></i>
-                            Archivo verificado y seguro
+                            <i class="fas fa-shield-alt" style="color: var(--gold); margin-right: 4px;"></i>
+                            Archivo distribuido desde jnobfit.online
                         </div>
                     </div>
                 </div>
 
-                <!-- Instrucciones de instalación -->
-                <div class="download-install-note">
-                    <div class="install-note-icon">📱</div>
+                <div class="download-install-note reveal">
+                    <div class="install-note-icon"><i class="fas fa-mobile-alt"></i></div>
                     <div class="install-note-text">
                         <h4>¿Cómo instalar la APK?</h4>
                         <ol>
                             <li><span>Descarga el archivo APK en tu Android</span></li>
-                            <li><span>Ve a <strong>Ajustes → Seguridad</strong> y activa <strong>"Fuentes
-                                        desconocidas"</strong> (o "Instalar apps desconocidas")</span></li>
+                            <li><span>Activa <strong>Instalar apps desconocidas</strong> para tu navegador o gestor de archivos</span></li>
                             <li><span>Abre el archivo descargado y pulsa <strong>Instalar</strong></span></li>
-                            <li><span>¡Listo! Abre JNOB FIT y empieza a entrenar</span></li>
+                            <li><span>Abre JNOB FIT e inicia sesión</span></li>
                         </ol>
-                        <p style="margin-top: 8px; font-size: 0.8rem; color: var(--gray-600);">
-                            ⚠️ En Android 10+, ve a Ajustes → Aplicaciones → menú especial → Instalar apps desconocidas
-                            → Navegador/Archivos → Permitir.
+                        <p class="install-note-extra">
+                            En Android 10+: Ajustes → Aplicaciones → Acceso especial → Instalar apps desconocidas.
                         </p>
                     </div>
                 </div>
 
-                <!-- Changelog -->
-                <div class="changelog">
+                <div class="changelog reveal">
                     <div class="changelog-header">
                         <h3>Novedades de esta versión</h3>
-                        <span class="changelog-version-tag">v1.0.0-beta</span>
+                        <span class="changelog-version-tag" id="changelog-version-tag">—</span>
                     </div>
-                    <div class="changelog-items">
+                    <div class="changelog-items" id="changelog-items">
                         <div class="changelog-item">
-                            <span class="cl-icon">✨</span>
-                            <p><strong>Creación de rutinas</strong> — Crea entrenamientos con ejercicios y parámetros
-                                totalmente personalizados</p>
-                        </div>
-                        <div class="changelog-item">
-                            <span class="cl-icon">📊</span>
-                            <p><strong>Registro de sesiones</strong> — Guarda y consulta el historial de cada
-                                entrenamiento</p>
-                        </div>
-                        <div class="changelog-item">
-                            <span class="cl-icon">⏱️</span>
-                            <p><strong>Temporizadores de descanso</strong> — Contadores automáticos entre series</p>
-                        </div>
-                        <div class="changelog-item">
-                            <span class="cl-icon">🔧</span>
-                            <p><strong>Versión beta</strong> — Pueden existir errores menores. Tu feedback nos ayuda a
-                                mejorar</p>
+                            <p>Cargando novedades…</p>
                         </div>
                     </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="versiones.html" class="download-history-link">
+                        <i class="fas fa-history"></i> Ver historial completo de versiones
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Beta / Waitlist Section — Ahora como "Mantente informado" -->
-    <section class="beta-section" id="beta">
-        <div class="container">
-            <div class="beta-content">
-                <div class="beta-badge">
-                    <span>Comunidad Beta</span>
-                </div>
-                <h2>Recibe Novedades</h2>
-                <p class="beta-subtitle">Regístrate para ser el primero en saber cuando haya nuevas versiones, funciones
-                    o cuando lleguemos a Play Store.</p>
-
-                <form class="beta-form" name="beta" method="POST" netlify data-netlify="true" action="/success.html">
-                    <input type="hidden" name="form-name" value="beta">
-                    <div class="form-wrapper">
-                        <div class="input-wrapper">
-                            <input type="email" name="email" id="email" placeholder="tu@email.com" required>
-                            <div class="input-border"></div>
-                        </div>
-                        <button type="submit" class="btn-submit">
-                            <span class="btn-text">Suscribirme</span>
-                            <span class="btn-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </span>
-                            <div class="btn-shine"></div>
-                        </button>
-                    </div>
-                    <p class="form-note">
-                        <i class="fas fa-bell"></i>
-                        Solo te avisamos cuando haya algo importante. Sin spam.
-                    </p>
-                </form>
-
-                <div class="beta-features">
-                    <div class="beta-feature">
-                        <i class="fas fa-bell"></i>
-                        <span>Aviso de nuevas versiones</span>
-                    </div>
-                    <div class="beta-feature">
-                        <i class="fas fa-gift"></i>
-                        <span>Beneficios exclusivos</span>
-                    </div>
-                    <div class="beta-feature">
-                        <i class="fas fa-comments"></i>
-                        <span>Canal de feedback</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
-            <div class="section-header centered">
+            <div class="section-header centered reveal">
                 <span class="section-label">FAQ</span>
-                <h2>Preguntas Frecuentes</h2>
+                <h2>Preguntas frecuentes</h2>
             </div>
             <div class="faq-grid">
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <button class="faq-question">
                         <span>¿Qué hace diferente a JNOB FIT?</span>
                         <div class="faq-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>JNOB FIT te da control absoluto. Mientras otras apps te obligan a seguir plantillas
-                            predefinidas, nosotros te dejamos crear ejercicios desde cero, definir tus propios
-                            parámetros y métricas, y adaptarlo a cualquier deporte o disciplina.</p>
+                        <p>Te da control sobre rutinas y parámetros en lugar de seguir plantillas genéricas.
+                            Es un motor de entrenamiento personalizable, no una app de rutinas cerradas.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <button class="faq-question">
-                        <span>¿Puedo usarlo para cualquier deporte?</span>
+                        <span>¿Funciona para cualquier deporte?</span>
                         <div class="faq-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Absolutamente. JNOB FIT funciona para gym, running, natación, ciclismo, yoga, boxeo,
-                            CrossFit, calistenia, artes marciales y cualquier actividad física que imagines.</p>
+                        <p>La visión es multi-deporte, pero hoy la beta está más madura para gimnasio.
+                            Estamos construyendo la base para ampliar a running, natación y más disciplinas.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <button class="faq-question">
                         <span>¿Cómo instalo la APK en Android?</span>
                         <div class="faq-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Descarga el archivo APK desde este sitio, activa "Fuentes desconocidas" en los ajustes de tu
-                            Android (Seguridad → Instalar apps desconocidas) y ejecuta el archivo descargado. El proceso
-                            tarda menos de 1 minuto. Si tienes dudas, revisa las instrucciones detalladas en la sección
-                            de descarga.</p>
+                        <p>Descarga el APK desde esta web, permite la instalación desde fuentes desconocidas
+                            y abre el archivo. Las instrucciones detalladas están en la sección de descarga.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <button class="faq-question">
                         <span>¿Cómo me entero de nuevas versiones?</span>
                         <div class="faq-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Regístrate con tu email en la sección "Recibe Novedades" y te avisaremos directamente cuando
-                            haya actualizaciones. También puedes seguirnos en redes sociales. Próximamente llegaremos a
-                            Google Play Store donde las actualizaciones serán automáticas.</p>
+                        <p>Consulta la página de <a href="versiones.html" style="color: var(--gold-light);">historial de versiones</a>
+                            donde publicamos cada release. Próximamente también en Google Play Store.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <button class="faq-question">
                         <span>¿Tiene costo?</span>
                         <div class="faq-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>La versión beta es completamente gratuita e incluye todas las funciones esenciales. Los beta
-                            testers tendrán acceso a funciones premium de forma gratuita durante el período de prueba.
-                        </p>
+                        <p>La beta es gratuita. Incluye las funciones esenciales para entrenar.
+                            Los planes de suscripción se aplicarán cuando el producto esté más maduro.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item reveal">
                     <button class="faq-question">
                         <span>¿Necesito experiencia previa?</span>
                         <div class="faq-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Para nada. JNOB FIT es intuitivo y fácil de usar. Si eres principiante, puedes empezar con
-                            rutinas simples. Si eres avanzado, tendrás todas las herramientas para crear programas
-                            complejos.</p>
+                        <p>No. Puedes empezar con rutinas simples o crear programas complejos si ya tienes experiencia.
+                            La app se adapta a tu nivel.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
     <section class="final-cta">
         <div class="container">
-            <div class="cta-content">
-                <h2>Deja de Adaptarte a las Apps.<br><span class="gradient-text">Que Se Adapten a Ti.</span></h2>
-                <p>La beta ya está disponible. Descárgala gratis y entrena sin límites.</p>
+            <div class="cta-content reveal">
+                <h2>Empieza a entrenar <span class="gradient-text">a tu manera</span></h2>
+                <p>Descarga la beta gratis y prueba el motor de entrenamiento de JNOB FIT.</p>
                 <a href="#descarga" class="btn-primary large">
                     <i class="fas fa-download"></i>
-                    <span>Descargar Ahora — Gratis</span>
-                    <div class="btn-shine"></div>
+                    <span>Descargar ahora</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <img src="/logos/logo-circle.svg" alt="JNOB FIT">
+                        <img src="logos/logo-circle.svg" alt="JNOB FIT">
                     </div>
-                    <p>Transformando la manera en que el mundo entrena.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                    <p>Motor de entrenamiento personalizable. Beta Android disponible.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Producto</h4>
                         <ul>
-                            <li><a href="#features">Características</a></li>
+                            <li><a href="#features">Funciones</a></li>
                             <li><a href="#descarga">Descargar Beta</a></li>
+                            <li><a href="versiones.html">Versiones</a></li>
                             <li><a href="#faq">Preguntas</a></li>
                         </ul>
                     </div>
@@ -905,20 +479,19 @@
                     <div class="footer-column">
                         <h4>Descargar</h4>
                         <ul>
-                            <li><a href="/downloads/jnob-fit-1.2.7-beta.apk" download>Android — Beta APK</a></li>
-                            <li><a href="#">iOS (Próximamente)</a></li>
-                            <li><a href="https://play.google.com/store" target="_blank">Play Store (Próximamente)</a>
-                            </li>
+                            <li><a href="#" id="footer-apk-link" download>Android — Beta APK</a></li>
+                            <li><a href="https://play.google.com/store" target="_blank" rel="noopener">Play Store (próximamente)</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 JNOB FIT. Todos los derechos reservados. · Beta v1.2.7</p>
+                <p>&copy; 2026 JNOB FIT. Todos los derechos reservados. · <span id="footer-version" class="footer-version">Beta</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="js/releases.js"></script>
     <script src="script.js"></script>
 </body>
 

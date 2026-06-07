@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Términos y Condiciones de uso de JNOB FIT. Reglas del programa beta y uso de la plataforma.">
     <title>Términos y Condiciones · JNOB FIT</title>
-    <link rel="icon" type="image/png" href="/logos/logo-circle.svg">
+    <link rel="icon" type="image/svg+xml" href="logos/logo-circle.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
             margin: 0 auto;
             background: rgba(10, 10, 10, 0.6);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--gold-border);
             border-radius: var(--radius-xl);
             padding: var(--space-2xl);
             box-shadow: var(--shadow-lg);
@@ -36,17 +36,14 @@
         .legal-header {
             text-align: center;
             margin-bottom: var(--space-2xl);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid var(--divider);
             padding-bottom: var(--space-lg);
         }
         .legal-header h1 {
             font-family: var(--font-display);
             font-size: clamp(2.2rem, 5vw, 3rem);
             font-weight: 800;
-            background: linear-gradient(135deg, var(--gold), #f5e7a0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--white);
             margin-bottom: var(--space-sm);
         }
         .legal-header .last-updated {
@@ -73,7 +70,7 @@
             transition: all 0.2s ease;
         }
         .legal-section:hover {
-            background: rgba(212, 175, 55, 0.05);
+            background: var(--gold-muted);
             border-left-color: var(--gold-light);
         }
         .legal-section h2 {
@@ -114,10 +111,10 @@
             font-weight: 600;
         }
         .legal-highlight {
-            background: rgba(212, 175, 55, 0.1);
+            background: var(--gold-muted);
             border-radius: var(--radius-md);
             padding: var(--space-md);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--gold-border);
             margin-top: var(--space-md);
         }
         .back-home {
@@ -144,16 +141,14 @@
     </style>
 </head>
 <body>
-    <canvas id="backgroundCanvas"></canvas>
-
     <nav class="navbar scrolled">
         <div class="nav-container">
-            <div class="logo">
-                <a href="index.html"><img src="/logos/logo-with-icon.svg" alt="JNOB FIT"></a>
-            </div>
-            <a href="/#beta" class="nav-cta">
-                <span>Acceso Beta</span>
-                <i class="fas fa-arrow-right"></i>
+            <a href="index.html" class="logo">
+                <img src="logos/logo-with-icon.svg" alt="JNOB FIT">
+            </a>
+            <a href="index.html#descarga" class="nav-cta">
+                <span>Descargar Beta</span>
+                <i class="fas fa-download"></i>
             </a>
         </div>
     </nav>
@@ -262,23 +257,18 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <img src="/logos/logo-circle.svg" alt="JNOB FIT">
+                        <img src="logos/logo-circle.svg" alt="JNOB FIT">
                     </div>
-                    <p>Transformando la manera en que el mundo entrena.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                    <p>Motor de entrenamiento personalizable. Beta Android disponible.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Producto</h4>
                         <ul>
-                            <li><a href="/#features">Características</a></li>
-                            <li><a href="/#beta">Acceso Beta</a></li>
-                            <li><a href="/#faq">Preguntas</a></li>
+                            <li><a href="index.html#features">Funciones</a></li>
+                            <li><a href="index.html#descarga">Descargar Beta</a></li>
+                            <li><a href="versiones.html">Versiones</a></li>
+                            <li><a href="index.html#faq">Preguntas</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -291,14 +281,14 @@
                     <div class="footer-column">
                         <h4>Descargar</h4>
                         <ul>
-                            <li><a href="#">Android (Próximamente)</a></li>
-                            <li><a href="#">iOS (Próximamente)</a></li>
+                            <li><a href="index.html#descarga">Android — Beta APK</a></li>
+                            <li><a href="https://play.google.com/store" target="_blank" rel="noopener">Play Store (próximamente)</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 JNOB FIT. Todos los derechos reservados.</p>
+                <p>&copy; 2026 JNOB FIT. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
