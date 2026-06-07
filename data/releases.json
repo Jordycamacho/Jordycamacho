@@ -1,7 +1,21 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.2.8",
+  "latest": "1.3.0",
   "releases": [
+    {
+      "version": "1.3.0",
+      "date": "2026-06-07",
+      "apk": "downloads/jnob-fit-1.3.0-beta.apk",
+      "sizeBytes": 20993225,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Nueva sección de métricas: historial, volumen semanal, consistencia y récords personales",
+        "Perfil y preferencias: unidades, prefill de sets y limpieza de caché local",
+        "Verificación de email y recuperación de contraseña",
+        "Mejoras en ejecución de rutinas con guardado de día y sesión entrenada",
+        "Carga local de rutinas y sincronización offline mejorada"
+      ]
+    },
     {
       "version": "1.2.8",
       "date": "2026-05-17",
