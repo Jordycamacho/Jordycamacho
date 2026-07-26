@@ -1,7 +1,21 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.4.0",
+  "latest": "1.5.0",
   "releases": [
+    {
+      "version": "1.5.0",
+      "date": "2026-07-26",
+      "apk": "downloads/jnob-fit-1.5.0-beta.apk",
+      "sizeBytes": 29738473,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Nuevas marcas de sesión (tags): catálogo global y personalizado con límites por plan",
+        "Configura los tags disponibles de cada rutina desde una sección visible en ejercicios",
+        "En entrenamiento, mantén pulsado un ejercicio para marcar uno o varios tags",
+        "Los tags de la última sesión se muestran como icono en cada ejercicio",
+        "Mejoras de interfaz en acciones de ejercicio y objetivos de entrenamiento"
+      ]
+    },
     {
       "version": "1.4.0",
       "date": "2026-07-23",
