@@ -1,7 +1,22 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.5.0",
+  "latest": "1.6.0",
   "releases": [
+    {
+      "version": "1.6.0",
+      "date": "2026-08-09",
+      "apk": "downloads/jnob-fit-1.6.0-beta.apk",
+      "sizeBytes": 30117187,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Motor de parámetros renovado: tipos canónicos, unidades, bounds y superficies de ejecución adaptativas",
+        "Nuevas superficies en entrenamiento: duración, carga+duración, distancia, elección y cualitativo (aún en evolución)",
+        "Catálogo Surface Lab para probar firmas de parámetros sin depender del marketplace",
+        "Métricas tipadas en detalle de sesión, progreso, PRs y objetivos (ya no asumen solo peso×reps)",
+        "Perfil de layout por rutina (incluye Segmentos) y primera UI real de running/intervalos",
+        "executionUiConfig exportable por rutina; preferencias globales como default al crear"
+      ]
+    },
     {
       "version": "1.5.0",
       "date": "2026-07-26",
