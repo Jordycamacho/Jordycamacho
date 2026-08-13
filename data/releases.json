@@ -1,7 +1,21 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.6.0",
+  "latest": "1.7.0",
   "releases": [
+    {
+      "version": "1.7.0",
+      "date": "2026-08-13",
+      "apk": "downloads/jnob-fit-1.7.0-beta.apk",
+      "sizeBytes": 7635446,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Mapa muscular en la ficha del ejercicio: frente y espalda, con intensidad en dorado",
+        "Explicación oficial de ejercicios gym (técnica y cues) junto al mapa de músculos",
+        "En el detalle de una sesión ves qué músculos trabajaste; toca uno para ver los ejercicios",
+        "Sobrecarga muscular en coral cuando un grupo se trabaja demasiado (no solo más dorado)",
+        "Al exportar e instalar planes se conserva el mapa muscular de cada ejercicio"
+      ]
+    },
     {
       "version": "1.6.0",
       "date": "2026-08-09",
