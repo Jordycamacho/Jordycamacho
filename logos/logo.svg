@@ -1,8 +1,5 @@
-<svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- JNOB in gold -->
-    <text x="10" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="48" fill="rgb(188, 169, 91)">JNOB</text>
-    <!-- Separator bar -->
-    <rect x="160" y="25" width="4" height="35" fill="rgb(188, 169, 91)" rx="2"/>
-    <!-- FIT in gray -->
-    <text x="175" y="55" font-family="Arial, sans-serif" font-weight="700" font-size="48" fill="#737b86">FIT</text>
+<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="34" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="28" fill="#BCA95B" letter-spacing="0.06em">JNOB</text>
+  <line x1="118" y1="12" x2="118" y2="36" stroke="#BCA95B" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <text x="132" y="34" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="600" font-size="28" fill="#737B86" letter-spacing="0.1em">FIT</text>
 </svg>

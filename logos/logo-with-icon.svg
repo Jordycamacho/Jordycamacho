@@ -1,20 +1,11 @@
-<svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Fitness dumbbell icon -->
-    <circle cx="45" cy="50" r="35" fill="none" stroke="rgb(188, 169, 91)" stroke-width="3"/>
-    
-    <!-- Dumbbell bar -->
-    <path d="M30 50 L35 50 M55 50 L60 50" stroke="rgb(188, 169, 91)" stroke-width="4" stroke-linecap="round"/>
-    
-    <!-- Dumbbell weights -->
-    <circle cx="37.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
-    <circle cx="52.5" cy="50" r="5" fill="rgb(188, 169, 91)"/>
-    
-    <!-- Center weight plate -->
-    <rect x="40" y="45" width="10" height="10" fill="rgb(188, 169, 91)" rx="1"/>
-    
-    <!-- JNOB text -->
-    <text x="95" y="58" font-family="Arial, sans-serif" font-weight="900" font-size="42" fill="rgb(188, 169, 91)">JNOB</text>
-    
-    <!-- FIT text -->
-    <text x="230" y="58" font-family="Arial, sans-serif" font-weight="700" font-size="42" fill="#737b86">FIT</text>
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- App icon motif -->
+  <path d="M38 6 L38 42 L6 42" stroke="#BCA95B" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="10" y="34" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="900" font-size="28" fill="#BCA95B">J</text>
+  <circle cx="36" cy="8" r="2.5" fill="#BCA95B"/>
+  <circle cx="8" cy="36" r="2.5" fill="#BCA95B"/>
+  <!-- Wordmark -->
+  <text x="54" y="32" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="21" fill="#BCA95B" letter-spacing="0.06em">JNOB</text>
+  <line x1="126" y1="14" x2="126" y2="34" stroke="#BCA95B" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <text x="136" y="32" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="600" font-size="21" fill="#737B86" letter-spacing="0.1em">FIT</text>
 </svg>
