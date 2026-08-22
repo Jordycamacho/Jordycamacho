@@ -1,7 +1,22 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.7.0",
+  "latest": "1.7.2",
   "releases": [
+    {
+      "version": "1.7.2",
+      "date": "2026-08-22",
+      "apk": "downloads/jnob-fit-1.7.2-beta.apk",
+      "sizeBytes": 30759148,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Catálogo ampliado de ejercicios de fuerza por grupos musculares",
+        "Vista previa de rutinas del catálogo antes de instalarlas",
+        "Plantillas PPL y upper/lower actualizadas y nueva rutina híbrida UL/PPL 5 días",
+        "Recordatorios de preparación con selección de días, hora y pantalla de destino",
+        "Mapa muscular al crear o editar ejercicios propios",
+        "Al salir del entrenamiento, opciones claras para guardar o salir sin guardar"
+      ]
+    },
     {
       "version": "1.7.0",
       "date": "2026-08-13",
