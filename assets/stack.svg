@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="280" viewBox="0 0 1100 280" role="img" aria-label="Stack técnico">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#78703F"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="1100" height="280" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1100" height="280" fill="#1E1E1E"/>
+
+    <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+      <!-- Backend -->
+      <rect x="24" y="24" width="252" height="232" rx="16" fill="#121212" stroke="#78703F" stroke-opacity="0.4"/>
+      <text x="44" y="58" fill="url(#gold)" font-size="12" font-weight="700" letter-spacing="1.8">BACKEND</text>
+      <text x="44" y="92" fill="#FFFFFF" font-size="15">Java · Spring Boot</text>
+      <text x="44" y="118" fill="#B3B3B3" font-size="14">Spring Security · REST</text>
+      <text x="44" y="144" fill="#B3B3B3" font-size="14">Maven · JPA / Hibernate</text>
+      <text x="44" y="170" fill="#B3B3B3" font-size="14">Hexagonal · Microservicios</text>
+      <text x="44" y="196" fill="#B3B3B3" font-size="14">JWT · OpenAPI</text>
+      <text x="44" y="222" fill="#B3B3B3" font-size="14">JUnit · Testcontainers</text>
+
+      <!-- Data -->
+      <rect x="292" y="24" width="252" height="232" rx="16" fill="#121212" stroke="#78703F" stroke-opacity="0.4"/>
+      <text x="312" y="58" fill="url(#gold)" font-size="12" font-weight="700" letter-spacing="1.8">DATOS</text>
+      <text x="312" y="92" fill="#FFFFFF" font-size="15">PostgreSQL · MySQL</text>
+      <text x="312" y="118" fill="#B3B3B3" font-size="14">MongoDB · Redis</text>
+      <text x="312" y="144" fill="#B3B3B3" font-size="14">Flyway · Caffeine</text>
+      <text x="312" y="170" fill="#B3B3B3" font-size="14">Room (Android)</text>
+      <text x="312" y="196" fill="#B3B3B3" font-size="14">YAML catalogs</text>
+      <text x="312" y="222" fill="#B3B3B3" font-size="14">Schemas aislados</text>
+
+      <!-- Producto -->
+      <rect x="560" y="24" width="252" height="232" rx="16" fill="#121212" stroke="#78703F" stroke-opacity="0.4"/>
+      <text x="580" y="58" fill="url(#gold)" font-size="12" font-weight="700" letter-spacing="1.8">PRODUCTO</text>
+      <text x="580" y="92" fill="#FFFFFF" font-size="15">Kotlin · Android</text>
+      <text x="580" y="118" fill="#B3B3B3" font-size="14">MVVM · Retrofit</text>
+      <text x="580" y="144" fill="#B3B3B3" font-size="14">React · TypeScript</text>
+      <text x="580" y="170" fill="#B3B3B3" font-size="14">Tailwind · Vite</text>
+      <text x="580" y="196" fill="#B3B3B3" font-size="14">Offline-first</text>
+      <text x="580" y="222" fill="#B3B3B3" font-size="14">i18n ES / EN</text>
+
+      <!-- Ops -->
+      <rect x="828" y="24" width="248" height="232" rx="16" fill="#121212" stroke="#78703F" stroke-opacity="0.4"/>
+      <text x="848" y="58" fill="url(#gold)" font-size="12" font-weight="700" letter-spacing="1.8">OPS</text>
+      <text x="848" y="92" fill="#FFFFFF" font-size="15">Docker · Compose</text>
+      <text x="848" y="118" fill="#B3B3B3" font-size="14">Proxmox VE · LXC</text>
+      <text x="848" y="144" fill="#B3B3B3" font-size="14">Cloudflare Tunnel</text>
+      <text x="848" y="170" fill="#B3B3B3" font-size="14">GitHub Actions</text>
+      <text x="848" y="196" fill="#B3B3B3" font-size="14">Grafana · Prometheus</text>
+      <text x="848" y="222" fill="#B3B3B3" font-size="14">Caddy · HTTPS</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1098" height="278" rx="19" fill="none" stroke="#78703F" stroke-opacity="0.45"/>
+</svg>
