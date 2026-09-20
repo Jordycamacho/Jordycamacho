@@ -1,7 +1,21 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.7.2",
+  "latest": "1.7.3",
   "releases": [
+    {
+      "version": "1.7.3",
+      "date": "2026-09-20",
+      "apk": "downloads/jnob-fit-1.7.3-beta.apk",
+      "sizeBytes": 31120815,
+      "minAndroid": "8.0",
+      "changelog": [
+        "Pestaña Métricas con progreso general: calendario de entrenos, volumen y consistencia",
+        "Comparar el mes con 2 o 3 rutinas y ver highlights de ejercicios",
+        "Inicio con resumen de la semana y arranque más claro de la siguiente sesión",
+        "Tres plantillas gratuitas de 3 días: casa, peso corporal y mancuernas",
+        "Guía in-app para las pantallas principales y prefill de series más fiable"
+      ]
+    },
     {
       "version": "1.7.2",
       "date": "2026-08-22",
