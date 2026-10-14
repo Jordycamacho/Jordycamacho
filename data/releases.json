@@ -1,7 +1,19 @@
 {
   "_comment": "Para publicar: 1) Copiar APK a downloads/  2) Añadir entrada aquí  3) Actualizar latest  4) Commit y push",
-  "latest": "1.7.3",
+  "latest": "1.7.6",
   "releases": [
+    {
+      "version": "1.7.6",
+      "date": "2026-10-14",
+      "apk": "downloads/jnob-fit-1.7.6-beta.apk",
+      "sizeBytes": 31332900,
+      "minAndroid": "12",
+      "changelog": [
+        "El progreso de la semana y del mes muestra los kilos por músculo",
+        "En el detalle de la sesión ves cuánto cambió cada músculo respecto a la anterior",
+        "Confirmaciones, listas y avisos pasan a hojas inferiores"
+      ]
+    },
     {
       "version": "1.7.3",
       "date": "2026-09-20",
